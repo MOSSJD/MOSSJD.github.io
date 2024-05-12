@@ -38,12 +38,6 @@
   
 
 <meta name="generator" content="Hexo 7.2.0"></head>
-
-
-  <script src="/lib/valine/av-min.js"></script>
-  <script src='/lib/valine/Valine.min.js'></script>
-  <script src="/lib/valine/jquery.min.js"></script>
-
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -384,7 +378,7 @@
   
 
 
-
+<!-- 
   <section id="comments" style="margin:10px;padding:10px;background:#fff;">
     <div id="vcomment" class="comment"></div> 
 <!-- <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
@@ -392,8 +386,10 @@
 <script src="https://unpkg.com/leancloud-storage@4.12.2/dist/av-live-query-min.js"></script>
 <script src="https://cdn.bootcdn.net/ajax/libs/valine/1.5.1/Valine.min.js"></script>
 <script>
-   var notify = 'false' == true ? true : false;
-   var verify = 'false' == true ? true : false;
+//    var notify = 'false' == true ? true : false;
+//    var verify = 'false' == true ? true : false;
+   var notify = 'false' == 'true' ? true : false;
+   var verify = 'false' == 'true' ? true : false;
     window.onload = function() {
         new Valine({
             el: '.comment',
@@ -407,6 +403,36 @@
     }
 </script>
   </section>
+ -->
+
+  <section id="comments" class="comments">
+    <style>
+      .comments{margin:30px;padding:10px;background:#fff}
+      @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+    </style>
+    <div id="vcomment" class="comment"></div> 
+<!-- <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script> -->
+<script src="https://unpkg.com/leancloud-storage@4.12.2/dist/av-live-query-min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/valine/1.5.1/Valine.min.js"></script>
+<script>
+//    var notify = 'false' == true ? true : false;
+//    var verify = 'false' == true ? true : false;
+   var notify = 'false' == 'true' ? true : false;
+   var verify = 'false' == 'true' ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "LSV1WdB1OuM9Nbv4fcnQqflJ-gzGzoHsz",
+            app_key: "KNLtqt7yPd32qubY7u2xCa7w",
+            placeholder: "Just go go",
+            avatar:"mm"
+        });
+    }
+</script>
+</section>
 
           </div>
         </div>
@@ -527,15 +553,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">数学</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">文学及哲学</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">社会科学</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">数学</a>
               </li>
              
               <li class="article-tag-list-item">
