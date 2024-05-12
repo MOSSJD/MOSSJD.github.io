@@ -39,6 +39,11 @@
 
 <meta name="generator" content="Hexo 7.2.0"></head>
 
+
+  <script src="/lib/valine/av-min.js"></script>
+  <script src='/lib/valine/Valine.min.js'></script>
+  <script src="/lib/valine/jquery.min.js"></script>
+
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -273,6 +278,39 @@
 
   
 
+
+
+<section id="comments" class="comments">
+  <style>
+    .comments {
+      margin: 30px;
+      padding: 10px;
+      background: #fff
+    }
+
+    @media screen and (max-width:800px) {
+      .comments {
+        margin: auto;
+        padding: 10px;
+        background: #fff
+      }
+    }
+  </style>
+  <div id="vcomment" class="comment"></div>
+<script>
+    var notify = 'false' == true ? true : false;
+    var verify = 'false' == true ? true : false;
+    new Valine({
+        av: AV,
+        el: '#vcomment',
+        notify: notify,
+        app_id: "LSV1WdB1OuM9Nbv4fcnQqflJ-gzGzoHsz",
+        app_key: "KNLtqt7yPd32qubY7u2xCa7w",
+        placeholder: "Just go go",
+        avatar: "mm",
+    });
+</script>
+</section>
 
           </div>
         </div>
