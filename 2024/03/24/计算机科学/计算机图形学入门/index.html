@@ -37,6 +37,11 @@
 
   
 
+  
+    <script src="/lib/valine/av-min.js"></script>
+    <script src='/lib/valine/Valine.min.js'></script>
+    <script src="/lib/valine/jquery.min.js"></script>
+  
 <meta name="generator" content="Hexo 7.2.0"></head>
 <body>
   <div id="container" q-class="show:isCtnShow">
@@ -222,15 +227,20 @@ S_y = \dfrac{C_h}{2} - C_y</script><h3 id="1-2-颜色模型"><a href="#1-2-颜�
   
 <nav id="article-nav">
   
-    <a href="/2024/03/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E8%BE%B9%E7%BC%98%E8%AE%A1%E7%AE%97%E5%BA%94%E7%94%A8%E4%B8%8E%E5%85%B6%E6%8C%91%E6%88%98/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2024/03/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/markdown%E5%AD%A6%E4%B9%A0%E6%96%87%E6%A1%A3/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          边缘计算应用与其挑战
+          markdown学习文档
         
       </div>
     </a>
   
+  
+    <a href="/2024/03/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/%E8%BE%B9%E7%BC%98%E8%AE%A1%E7%AE%97%E5%BA%94%E7%94%A8%E4%B8%8E%E5%85%B6%E6%8C%91%E6%88%98/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">边缘计算应用与其挑战</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -278,32 +288,38 @@ S_y = \dfrac{C_h}{2} - C_y</script><h3 id="1-2-颜色模型"><a href="#1-2-颜�
 
 
 
-  <section id="comments" style="margin:10px;padding:10px;background:#fff;">
-    <div id="vcomment" class="comment"></div> 
-<script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.15.2/dist/av.min.js"></script>
-<!-- <script src="//unpkg.com/valine/dist/Valine.min.js"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.15.2/dist/av-live-query.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/valine@1.5.1/dist/Valine.min.js"></script>
+  <section id="comments" class="comments">
+    <style>
+      .comments {
+        margin: 30px;
+        padding: 10px;
+        background: #fff
+      }
+  
+      @media screen and (max-width:800px) {
+        .comments {
+          margin: auto;
+          padding: 10px;
+          background: #fff
+        }
+      }
+    </style>
+    <div id="vcomment" class="comment"></div>
 <script>
-   var notify = 'false' == true ? true : false;
-   var verify = 'false' == true ? true : false;
-//    var notify = 'false' == 'true' ? true : false;
-//    var verify = 'false' == 'true' ? true : false;
-    window.onload = function() {
-        new Valine({
-            el: '.comment',
-            notify: notify,
-            verify: verify,
-            app_id: "LSV1WdB1OuM9Nbv4fcnQqflJ-gzGzoHsz",
-            app_key: "KNLtqt7yPd32qubY7u2xCa7w",
-            placeholder: "Just go go",
-            avatar:"mm"
-        });
-    }
+    var notify = 'false' == true ? true : false;
+    var verify = 'false' == true ? true : false;
+    new Valine({
+        av: AV,
+        el: '#vcomment',
+        notify: notify,
+        app_id: "LSV1WdB1OuM9Nbv4fcnQqflJ-gzGzoHsz",
+        app_key: "KNLtqt7yPd32qubY7u2xCa7w",
+        placeholder: "Just go go",
+        avatar:"mm",
+    });
 </script>
   </section>
-
-
+  
           </div>
         </div>
       </div>
@@ -419,10 +435,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">数学</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">作业</a>
               </li>
              
@@ -431,15 +443,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">数学</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">社会科学</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">随笔与日记</a>
+                <a href="javascript:void(0)" class="js-tag color1">计算机科学</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">计算机科学</a>
+                <a href="javascript:void(0)" class="js-tag color1">随笔与日记</a>
               </li>
             
             <div class="clearfix"></div>
