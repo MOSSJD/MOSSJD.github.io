@@ -15,17 +15,21 @@
 <meta property="og:site_name" content="MOSSJD的小站">
 <meta property="og:description" content="Calculus笔记-16.3-直线积分基本定理">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406082331844.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406082331058.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406090315439.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406090322905.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405291450779.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405291450092.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405291516886.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405291517329.png">
 <meta property="article:published_time" content="2024-05-27T02:58:21.000Z">
-<meta property="article:modified_time" content="2024-05-29T07:21:34.896Z">
+<meta property="article:modified_time" content="2024-06-08T20:10:42.098Z">
 <meta property="article:author" content="MOSSJD">
 <meta property="article:tag" content="数学">
 <meta property="article:tag" content="Calculus">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405291450779.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406082331844.png">
   
     <link rel="alternative" href="/atom.xml" title="MOSSJD的小站" type="application/atom+xml">
   
@@ -192,25 +196,78 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="Calculus笔记-16-3-直线积分基本定理"><a href="#Calculus笔记-16-3-直线积分基本定理" class="headerlink" title="Calculus笔记-16.3-直线积分基本定理"></a>Calculus笔记-16.3-直线积分基本定理</h3><span id="more"></span>
-<h4 id="直线积分基本定理"><a href="#直线积分基本定理" class="headerlink" title="直线积分基本定理"></a>直线积分基本定理</h4><h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>若 $\mathbf{F} = \nabla f$ ，且曲线 $C$ 的轨迹由 $a$ 到 $b$ ，则</p>
+<h4 id="直线积分基本定理"><a href="#直线积分基本定理" class="headerlink" title="直线积分基本定理"></a>直线积分基本定理</h4><h5 id="引入"><a href="#引入" class="headerlink" title="引入"></a>引入</h5><ul>
+<li><p>微积分基本定理可以写为</p>
 <script type="math/tex; mode=display">
-\int_C\mathbf F\cdot d\mathbf r = \int_C\nabla f\cdot d\mathbf r = f(b) - f(a)
-\tag{3.1}\label{直线积分基本定理}</script><h5 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h5><p>我们来证明 $f$ 为二元函数的情况。</p>
-<p>若 $\mathbf F = \nabla f(\mathbf r(t)) = \nabla f(x(t),\ y(t))$ ，则</p>
+  \int_a^bF'(x)dx = F(b) - F(a)
+  \tag{3.1}\label{微积分基本定理}</script><p>  其中 $F’$ 在区间 $[a, b]$ 上连续。</p>
+</li>
+<li><p>我们将方程 $\eqref{微积分基本定理}$ 称作净变化定理：变化率的积分等于净变化量。</p>
+</li>
+</ul>
+<p>若将对二元或三院函数 $f$ 的梯度向量 $\nabla f$ 看作 $f$ 的导数，则下列定理可以被看作直线积分的基本定理：</p>
+<h5 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h5><p>令 $C$ 为向量值函数 $\mathbf r(t),\ a\le t\le b$ 所确定的光滑曲线，令 $f$ 为梯度向量 $\nabla f$ 在 $C$ 上连续的二元或三元可导函数，则</p>
 <script type="math/tex; mode=display">
+\int_Cf\cdot d\mathbf r = f(\mathbf r(b)) - f(\mathbf r(a))
+\tag{3.2}\label{直线积分基本定理}</script><ul>
+<li><p>定理 $\eqref{直线积分基本定理}$ 说明，我们可以在只知道 $f$ 分别在曲线 $C$ 的起点和终点的值的情况下求得其梯度场的直线积分。也就是说， $\nabla f$ 的直线积分等于 $f$ 的净变化量。</p>
+<p>  <img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406082331844.png" alt=""></p>
+</li>
+<li><p>若 $f$ 是二元函数，且 $C$ 是起点为 $A(x_1, y_1)$ ，终点为 $B(x_2, y_2)$ 的平面曲线（如上图），则定理 $\eqref{直线积分基本定理}$ 变为</p>
+<script type="math/tex; mode=display">
+  \int_C\nabla f\cdot d\mathbf r = f(x_2, y_2) - f(x_1, y_1)\text{；}</script><p>  <img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406082331058.png" alt=""></p>
+</li>
+<li><p>若 $f$ 是三元函数，且 $C$ 是起点为 $A(x_1, y_1, z_1)$ ，终点为 $B(x_2, y_2, z_2)$ 的空间曲线（如上图），则定理 $\eqref{直线积分基本定理}$ 变为</p>
+<script type="math/tex; mode=display">
+  \int_C\nabla f\cdot d\mathbf r = f(x_2, y_2, z_2) - f(x_1, y_1, z_1)\text{。}</script></li>
+</ul>
+<h5 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h5><script type="math/tex; mode=display">
 \begin{align}
-\int_C\mathbf F\cdot d\mathbf r &=
+\int_C\nabla f\cdot d\mathbf r &=
 \int_a^b\nabla f(\mathbf r(t))\cdot \mathbf r'(t)dt \\&=
-\int_a^b\nabla f(x(t),\ y(t))\cdot<x'(t),\ y'(t)>dt \\&=
-\int_a^b[\frac{\partial f}{\partial x}\frac{dx}{dt} + 
-\frac{\partial f}{\partial y}\frac{dy}{dt}]dt \\&= 
-\int_a^b\frac{df}{dt}dt \\&=
-f(b) - f(a).
-\end{align}</script><p>$f$ 为三元函数的情况也可以用类似方法求出。</p>
-<p>该定理对于分段连续的曲线 $C$ 也成立。</p>
-<h4 id="路径无关"><a href="#路径无关" class="headerlink" title="路径无关"></a>路径无关</h4><h5 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h5><p>若 $\mathbf F$ 在区间 $D$ 内有定义，且对 $D$ 内的所有闭合路径 $C$ ，满足 $\int_C\mathbf F\cdot d\mathbf r = 0$ ，则称积分 $\int_C\mathbf F\cdot d\mathbf r$ <strong>路径无关</strong>。</p>
-<h4 id="路径无关与保守向量场"><a href="#路径无关与保守向量场" class="headerlink" title="路径无关与保守向量场"></a>路径无关与保守向量场</h4><p>设 $\mathbf F$ 是在开连通区间 $D$ 内连续的向量场，若 $\int_C\mathbf F\cdot d\mathbf r$ 在 $D$ 内路径无关，则 $\mathbf F$ 为 $D$ 内的保守向量场。</p>
-<h5 id="证明-1"><a href="#证明-1" class="headerlink" title="证明"></a>证明</h5><p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405291450779.png" alt=""></p>
+\int_a^b\left(
+\frac{\partial f}{\partial x}\frac{dx}{dt} + 
+\frac{\partial f}{\partial y}\frac{dy}{dt} + 
+\frac{\partial f}{\partial z}\frac{dz}{dt}
+\right)\\&=
+\int_a^b\frac d{dt}f(\mathbf r(t))dt\qquad\text{(链式法则)} \\&=
+f(\mathbf r(b)) - f(\mathbf r(a))\qquad\text{(微积分基本定理)}.
+\end{align}</script><p>该定理对由有限条光滑的曲线所组成的曲线 $C$ 也成立。</p>
+<h4 id="路径无关-independent-of-path"><a href="#路径无关-independent-of-path" class="headerlink" title="路径无关(independent of path)"></a>路径无关(independent of path)</h4><h5 id="引入-1"><a href="#引入-1" class="headerlink" title="引入"></a>引入</h5><ul>
+<li><p>设 $C_1$ 和 $C_2$ 是两条有着相同起点 $A$ 和终点 $B$ 的（分段）光滑曲线（<strong>路径</strong>）。</p>
+<p>  一般来说， $\int_{C_1}\mathbf F\cdot d\mathbf r\ne\int_{C_2}\mathbf F\cdot d\mathbf r$ ，但从定理 $\eqref{直线积分基本定理}$ 可知，在 $\nabla f$ 连续时，</p>
+<script type="math/tex; mode=display">
+  \int_{C_1}\nabla f\cdot d\mathbf r = \int_{C_2}\nabla f\cdot d\mathbf r.</script><p>  即，<em>保守</em>向量场的直线积分只由曲线的起点和终点决定。</p>
+</li>
+</ul>
+<h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><ul>
+<li>一般来说，若 $\mathbf F$ 是在定义域 $D$ 内连续的向量场，若 $\int_{C_1}\mathbf F\cdot d\mathbf r = \int_{C_2}\mathbf F\cdot d\mathbf r$ 对于 $D$ 内任意两条起点和终点分别相同的路径 $C_1$ 和 $C_2$ 成立，则我们称直线积分 $\int_C\mathbf F\cdot d\mathbf r$ <strong>路径无关</strong>。</li>
+</ul>
+<h4 id="路径无关的判定定理"><a href="#路径无关的判定定理" class="headerlink" title="路径无关的判定定理"></a>路径无关的判定定理</h4><p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406090315439.png" alt=""></p>
+<p>如上图，如果一条曲线的起点与终点重合，则我们称其为<strong>闭合</strong>(<strong>closed</strong>)曲线，即 $\mathbf r(b) = \mathbf r(a)$ 。</p>
+<h5 id="定理-1"><a href="#定理-1" class="headerlink" title="定理"></a>定理</h5><p> $\int_C\mathbf F\cdot d\mathbf r = 0$ 对任意 $D$ 内的闭合路径 $C$ 成立时， $\int_C\mathbf F\cdot d\mathbf r$ 在 $D$ 内路径无关。</p>
+<h5 id="证明-1"><a href="#证明-1" class="headerlink" title="证明"></a>证明</h5><ul>
+<li><p>充分性</p>
+<p>  <img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406090322905.png" alt=""></p>
+<p>  若 $\int_C\mathbf F\cdot d\mathbf r$ 在 $D$ 内路径无关，且 $C$ 是 $D$ 内的任意一条闭合路径，则我们可以在 $C$ 内任意选择两个点 $A$ 和 $B$ ，并将 $C$ 视为由从 $A$ 到 $B$ 的路径 $C_1$ 和从 $B$ 到 $A$ 的路径 $C_2$ 组成的路径（如上图）。则</p>
+<script type="math/tex; mode=display">
+  \int_C\mathbf F\cdot d\mathbf r = 
+  \int_{C_1}\mathbf F\cdot d\mathbf r + \int_{C_2}\mathbf F\cdot d\mathbf r = 
+  \int_{C_1}\mathbf F\cdot d\mathbf r - \int_{-C_2}\mathbf F\cdot d\mathbf r = 
+  0.</script></li>
+<li><p>必要性</p>
+<p>  若对 $D$ 内的所有闭合路径 $C$ 都有 $\int_C\mathbf F\cdot d\mathbf r = 0$ ，取任意两条从 $A$ 到 $B$ 的路径 $C_1$ 和 $C_2$ ，并定义 $C$ 为由 $C_1$ 和 $-C_2$ 连接而成的曲线，则</p>
+<script type="math/tex; mode=display">
+  0 =\int_C\mathbf F\cdot d\mathbf r = 
+  \int_{C_1}\mathbf F\cdot d\mathbf r + \int_{-C_2}\mathbf F\cdot d\mathbf r = 
+  \int_{C_1}\mathbf F\cdot d\mathbf r - \int_{C_2}\mathbf F\cdot d\mathbf r</script><p>  ，因此 $\int_{C_1}\mathbf F\cdot d\mathbf r = \int_{C_2}\mathbf F\cdot d\mathbf r$ 。</p>
+</li>
+</ul>
+<hr>
+<p>我们知道，任何保守向量场 $\mathbf F$ 是路径无关的，则对于任何闭合路径有 $\int_C\mathbf F\cdot d\mathbf r = 0$ 。其物理意义为保守力场在闭合曲线路径上所做的功为 $0$ 。</p>
+<h4 id="路径无关与保守向量场"><a href="#路径无关与保守向量场" class="headerlink" title="路径无关与保守向量场"></a>路径无关与保守向量场</h4><p>下列定理证明了==只有==保守向量场是路径无关的。</p>
+<h5 id="定理-2"><a href="#定理-2" class="headerlink" title="定理"></a>定理</h5><p>设 $\mathbf F$ 是在开连通区间 $D$ （ $D$ 内不包含任何其边界点）内连续的向量场，若 $\int_C\mathbf F\cdot d\mathbf r$ 在 $D$ 内路径无关，则 $\mathbf F$ 为 $D$ 内的保守向量场，即存在 $f$ 使得 $\nabla f = \mathbf F$ 。</p>
+<h5 id="证明-2"><a href="#证明-2" class="headerlink" title="证明"></a>证明</h5><p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405291450779.png" alt=""></p>
 <p>如图，设 $\int_C\mathbf F\cdot d\mathbf r = \int_{C_1}\mathbf F\cdot d\mathbf r + \int_{C_2}\mathbf F\cdot d\mathbf r$ ，令 $f(x, y) = \int_{(a, b)}^{(x, y)}\mathbf F\cdot d\mathbf r$ ，则</p>
 <script type="math/tex; mode=display">
 f(x, y) = 
@@ -363,7 +420,7 @@ P(A) + K(A) = P(B) + K(B)
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Calculus%E7%AC%94%E8%AE%B0-16-3-%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text">Calculus笔记-16.3-直线积分基本定理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86"><span class="toc-number">1.1.</span> <span class="toc-text">直线积分基本定理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89"><span class="toc-number">1.1.1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%AF%81%E6%98%8E"><span class="toc-number">1.1.2.</span> <span class="toc-text">证明</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B7%AF%E5%BE%84%E6%97%A0%E5%85%B3"><span class="toc-number">1.2.</span> <span class="toc-text">路径无关</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89-1"><span class="toc-number">1.2.1.</span> <span class="toc-text">定义</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B7%AF%E5%BE%84%E6%97%A0%E5%85%B3%E4%B8%8E%E4%BF%9D%E5%AE%88%E5%90%91%E9%87%8F%E5%9C%BA"><span class="toc-number">1.3.</span> <span class="toc-text">路径无关与保守向量场</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%AF%81%E6%98%8E-1"><span class="toc-number">1.3.1.</span> <span class="toc-text">证明</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BF%9D%E5%AE%88%E5%90%91%E9%87%8F%E5%9C%BA%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="toc-number">1.4.</span> <span class="toc-text">保守向量场的性质</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E5%90%91%E9%87%8F%E5%9C%BA%E6%98%AF%E5%90%A6%E4%B8%BA%E4%BF%9D%E5%AE%88%E5%90%91%E9%87%8F%E5%9C%BA"><span class="toc-number">1.5.</span> <span class="toc-text">判断向量场是否为保守向量场</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B1%82%E5%87%BA-f"><span class="toc-number">1.6.</span> <span class="toc-text">求出 $f$</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%83%BD%E9%87%8F%E5%AE%88%E6%81%92%E5%AE%9A%E5%BE%8B"><span class="toc-number">1.7.</span> <span class="toc-text">能量守恒定律</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8A%A8%E8%83%BD%E5%AE%9A%E7%90%86"><span class="toc-number">1.7.1.</span> <span class="toc-text">动能定理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%83%BD%E9%87%8F%E5%AE%88%E6%81%92"><span class="toc-number">1.7.2.</span> <span class="toc-text">能量守恒</span></a></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Calculus%E7%AC%94%E8%AE%B0-16-3-%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text">Calculus笔记-16.3-直线积分基本定理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86"><span class="toc-number">1.1.</span> <span class="toc-text">直线积分基本定理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BC%95%E5%85%A5"><span class="toc-number">1.1.1.</span> <span class="toc-text">引入</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9A%E7%90%86"><span class="toc-number">1.1.2.</span> <span class="toc-text">定理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%AF%81%E6%98%8E"><span class="toc-number">1.1.3.</span> <span class="toc-text">证明</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B7%AF%E5%BE%84%E6%97%A0%E5%85%B3-independent-of-path"><span class="toc-number">1.2.</span> <span class="toc-text">路径无关(independent of path)</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BC%95%E5%85%A5-1"><span class="toc-number">1.2.1.</span> <span class="toc-text">引入</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89"><span class="toc-number">1.2.2.</span> <span class="toc-text">定义</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B7%AF%E5%BE%84%E6%97%A0%E5%85%B3%E7%9A%84%E5%88%A4%E5%AE%9A%E5%AE%9A%E7%90%86"><span class="toc-number">1.3.</span> <span class="toc-text">路径无关的判定定理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9A%E7%90%86-1"><span class="toc-number">1.3.1.</span> <span class="toc-text">定理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%AF%81%E6%98%8E-1"><span class="toc-number">1.3.2.</span> <span class="toc-text">证明</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B7%AF%E5%BE%84%E6%97%A0%E5%85%B3%E4%B8%8E%E4%BF%9D%E5%AE%88%E5%90%91%E9%87%8F%E5%9C%BA"><span class="toc-number">1.4.</span> <span class="toc-text">路径无关与保守向量场</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9A%E7%90%86-2"><span class="toc-number">1.4.1.</span> <span class="toc-text">定理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%AF%81%E6%98%8E-2"><span class="toc-number">1.4.2.</span> <span class="toc-text">证明</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BF%9D%E5%AE%88%E5%90%91%E9%87%8F%E5%9C%BA%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="toc-number">1.5.</span> <span class="toc-text">保守向量场的性质</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E5%90%91%E9%87%8F%E5%9C%BA%E6%98%AF%E5%90%A6%E4%B8%BA%E4%BF%9D%E5%AE%88%E5%90%91%E9%87%8F%E5%9C%BA"><span class="toc-number">1.6.</span> <span class="toc-text">判断向量场是否为保守向量场</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B1%82%E5%87%BA-f"><span class="toc-number">1.7.</span> <span class="toc-text">求出 $f$</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%83%BD%E9%87%8F%E5%AE%88%E6%81%92%E5%AE%9A%E5%BE%8B"><span class="toc-number">1.8.</span> <span class="toc-text">能量守恒定律</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8A%A8%E8%83%BD%E5%AE%9A%E7%90%86"><span class="toc-number">1.8.1.</span> <span class="toc-text">动能定理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%83%BD%E9%87%8F%E5%AE%88%E6%81%92"><span class="toc-number">1.8.2.</span> <span class="toc-text">能量守恒</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -537,23 +594,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">计算机科学</a>
+                <a href="javascript:void(0)" class="js-tag color5">人文社科</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">GAMES101</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">计算机图形学</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">线性代数</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">微积分</a>
+                <a href="javascript:void(0)" class="js-tag color3">文学</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -561,11 +606,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">人文社科</a>
+                <a href="javascript:void(0)" class="js-tag color1">计算机科学</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">文学</a>
+                <a href="javascript:void(0)" class="js-tag color4">GAMES101</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -577,23 +622,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">线性代数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">管理学</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">电影</a>
+                <a href="javascript:void(0)" class="js-tag color4">微积分</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">小说</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">随笔与日记</a>
+                <a href="javascript:void(0)" class="js-tag color2">计算机图形学</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -609,15 +650,31 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">小说</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">边缘计算</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">随笔与日记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">电影</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">番剧</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">影评</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">边缘计算</a>
               </li>
             
             <div class="clearfix"></div>
