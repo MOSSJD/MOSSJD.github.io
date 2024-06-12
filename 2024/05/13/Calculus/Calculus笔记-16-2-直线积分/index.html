@@ -17,9 +17,10 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405171510420.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406121054729.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406121129635.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405181214127.png">
 <meta property="article:published_time" content="2024-05-13T03:55:13.000Z">
-<meta property="article:modified_time" content="2024-06-12T03:06:48.148Z">
+<meta property="article:modified_time" content="2024-06-12T03:37:16.577Z">
 <meta property="article:author" content="MOSSJD">
 <meta property="article:tag" content="数学">
 <meta property="article:tag" content="Calculus">
@@ -310,6 +311,19 @@
   \tag{2.13}\label{线段的向量表示法}</script><p>  给出。</p>
 </li>
 </ul>
+<h4 id="直线积分的性质"><a href="#直线积分的性质" class="headerlink" title="直线积分的性质"></a>直线积分的性质</h4><ul>
+<li><p>当我们对所求直线积分给出参数化 $x = x(t),\ y = y(t),\ a\le t\le b$ ，则这种参数化确定了一种方向，如下图：</p>
+<p>  <img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406121129635.png" alt=""></p>
+<p>  其中正方向代表了 $t$ 增加的方向。</p>
+<p>  若我们认为 $-C$ 代表了 $C$ 的反方向，则我们有</p>
+<script type="math/tex; mode=display">
+  \int_{-C}f(x, y)dx = -\int_Cf(x, y)dx\qquad
+  \int_{-C}f(x, y)dy = -\int_Cf(x, y)dy</script></li>
+<li><p>但当我们对弧长求积分时，则有：</p>
+<script type="math/tex; mode=display">
+  \int_{-C}f(x, y)ds = \int_Cf(x, y)ds</script><p>  因为无论方向怎么变化， $\Delta s$ 的值总是正的。</p>
+</li>
+</ul>
 <h4 id="空间中的直线积分"><a href="#空间中的直线积分" class="headerlink" title="空间中的直线积分"></a>空间中的直线积分</h4><ul>
 <li><p>设 $C$ 是由参数方程</p>
 <script type="math/tex; mode=display">
@@ -327,7 +341,7 @@
   \left(\frac{dy}{dt}\right)^2 + 
   \left(\frac{dz}{dt}\right)^2
   }dt
-  \tag{2.15}\label{空间直线积分2}</script><p>  注意到积分 $\eqref{直线积分2}$ 和 $\eqref{空间直线积分1}$ 都可以写成更精简的形式：</p>
+  \tag{2.15}\label{空间直线积分2}</script><p>  注意到积分 $\eqref{直线积分2}$ 和 $\eqref{空间直线积分2}$ 都可以写成更精简的形式：</p>
 <script type="math/tex; mode=display">
   \int_a^b\mathbf f(\mathbf r(t))
   |\mathbf r'(t)|
@@ -484,7 +498,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Calculus%E7%AC%94%E8%AE%B0-16-2-%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="toc-number">1.</span> <span class="toc-text">Calculus笔记-16.2-直线积分</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="toc-number">1.1.</span> <span class="toc-text">直线积分</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BC%95%E5%85%A5"><span class="toc-number">1.1.1.</span> <span class="toc-text">引入</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">1.1.2.</span> <span class="toc-text">直线积分的定义</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%86%E6%AE%B5%E6%9B%B2%E7%BA%BF%E7%9A%84%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="toc-number">1.2.</span> <span class="toc-text">分段曲线的直线积分</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E4%B8%8A%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-number">1.3.</span> <span class="toc-text">物理上的应用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%B9%E5%9D%90%E6%A0%87%E7%9A%84%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="toc-number">1.4.</span> <span class="toc-text">对坐标的直线积分</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A9%BA%E9%97%B4%E4%B8%AD%E7%9A%84%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="toc-number">1.5.</span> <span class="toc-text">空间中的直线积分</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E5%9C%BA%E7%9A%84%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="toc-number">1.6.</span> <span class="toc-text">向量场的直线积分</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BC%95%E5%85%A5-1"><span class="toc-number">1.6.1.</span> <span class="toc-text">引入</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E5%9C%BA%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">1.6.2.</span> <span class="toc-text">向量场直线积分的定义</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E5%9C%BA%E5%92%8C%E6%95%B0%E9%87%8F%E5%9C%BA%E7%9A%84%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="toc-number">1.6.3.</span> <span class="toc-text">向量场和数量场的直线积分</span></a></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Calculus%E7%AC%94%E8%AE%B0-16-2-%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="toc-number">1.</span> <span class="toc-text">Calculus笔记-16.2-直线积分</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="toc-number">1.1.</span> <span class="toc-text">直线积分</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BC%95%E5%85%A5"><span class="toc-number">1.1.1.</span> <span class="toc-text">引入</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">1.1.2.</span> <span class="toc-text">直线积分的定义</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%86%E6%AE%B5%E6%9B%B2%E7%BA%BF%E7%9A%84%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="toc-number">1.2.</span> <span class="toc-text">分段曲线的直线积分</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E4%B8%8A%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-number">1.3.</span> <span class="toc-text">物理上的应用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%B9%E5%9D%90%E6%A0%87%E7%9A%84%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="toc-number">1.4.</span> <span class="toc-text">对坐标的直线积分</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="toc-number">1.5.</span> <span class="toc-text">直线积分的性质</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A9%BA%E9%97%B4%E4%B8%AD%E7%9A%84%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="toc-number">1.6.</span> <span class="toc-text">空间中的直线积分</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E5%9C%BA%E7%9A%84%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="toc-number">1.7.</span> <span class="toc-text">向量场的直线积分</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BC%95%E5%85%A5-1"><span class="toc-number">1.7.1.</span> <span class="toc-text">引入</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E5%9C%BA%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">1.7.2.</span> <span class="toc-text">向量场直线积分的定义</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E5%9C%BA%E5%92%8C%E6%95%B0%E9%87%8F%E5%9C%BA%E7%9A%84%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="toc-number">1.7.3.</span> <span class="toc-text">向量场和数量场的直线积分</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -650,14 +664,6 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">数学</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Calculus</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">计算机科学</a>
               </li>
              
@@ -666,19 +672,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">计算机图形学</a>
+                <a href="javascript:void(0)" class="js-tag color3">数学</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">线性代数</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">微积分</a>
+                <a href="javascript:void(0)" class="js-tag color4">Calculus</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">人文社科</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">文学</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -694,7 +700,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">文学</a>
+                <a href="javascript:void(0)" class="js-tag color2">计算机图形学</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">线性代数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">微积分</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -710,10 +724,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">边缘计算</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
@@ -722,11 +732,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">随笔与日记</a>
+                <a href="javascript:void(0)" class="js-tag color5">边缘计算</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">电影</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">随笔与日记</a>
               </li>
             
             <div class="clearfix"></div>
