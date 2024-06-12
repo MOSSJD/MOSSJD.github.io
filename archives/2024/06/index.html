@@ -6,20 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://mossjd.github.io">
-  <title>Calculus笔记-9.4-人口模型 | MOSSJD的小站</title>
+  <title>Archives: 2024/6 | MOSSJD的小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="9.4 人口模型(Models for Population Growth)">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Calculus笔记-9.4-人口模型">
-<meta property="og:url" content="https://mossjd.github.io/2024/05/04/Calculus/Calculus%E7%AC%94%E8%AE%B0-9-4-%E4%BA%BA%E5%8F%A3%E6%A8%A1%E5%9E%8B/index.html">
+  <meta name="description" content="MOSSJD的博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MOSSJD的小站">
+<meta property="og:url" content="https://mossjd.github.io/archives/2024/06/index.html">
 <meta property="og:site_name" content="MOSSJD的小站">
-<meta property="og:description" content="9.4 人口模型(Models for Population Growth)">
+<meta property="og:description" content="MOSSJD的博客">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-05-04T01:46:33.000Z">
-<meta property="article:modified_time" content="2024-05-17T03:06:56.077Z">
 <meta property="article:author" content="MOSSJD">
-<meta property="article:tag" content="数学">
-<meta property="article:tag" content="Calculus">
+<meta property="article:tag" content="calculus, python, philosophy, c++">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="MOSSJD的小站" type="application/atom+xml">
@@ -166,75 +163,36 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Calculus/Calculus笔记-9-4-人口模型" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      Calculus笔记-9.4-人口模型
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2024" class="archive-year">2024</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2024/06/12/Calculus/Calculus%E7%AC%94%E8%AE%B0-16-4-%E6%A0%BC%E6%9E%97%E5%85%AC%E5%BC%8F/" class="archive-article-date">
+  	<time datetime="2024-06-12T03:42:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-06-12</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2024/06/12/Calculus/Calculus%E7%AC%94%E8%AE%B0-16-4-%E6%A0%BC%E6%9E%97%E5%85%AC%E5%BC%8F/">Calculus笔记-16.4-格林公式</a>
     </h1>
   
 
-        
-        <a href="/2024/05/04/Calculus/Calculus%E7%AC%94%E8%AE%B0-9-4-%E4%BA%BA%E5%8F%A3%E6%A8%A1%E5%9E%8B/" class="archive-article-date">
-  	<time datetime="2024-05-04T01:46:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-05-04</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="9-4-人口模型-Models-for-Population-Growth"><a href="#9-4-人口模型-Models-for-Population-Growth" class="headerlink" title="9.4 人口模型(Models for Population Growth)"></a>9.4 人口模型(Models for Population Growth)</h3><span id="more"></span>
-<h4 id="自然增长模型"><a href="#自然增长模型" class="headerlink" title="自然增长模型"></a>自然增长模型</h4><h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>设 $P(t)$ 为 $y$ 在时间 $t$ 时的数目, 且 $P$ 关于 $t$ 的变化率与其在任意时间的大小 $P(t)$ 成比例, 则</p>
-<script type="math/tex; mode=display">
-\frac{dP}{dt} = kP</script><p>其中 $k$ 为常量.</p>
-<p>我们将式 $(38)$ 称为<strong>自然增长定律</strong>. 若 $k$ 为正数, 则人口将增长; 若 $k$ 为负数, 则人口将减少.</p>
-<h5 id="解"><a href="#解" class="headerlink" title="解"></a>解</h5><p>式 $(38)$ 为可分离变量的微分方程, 因此我们可以用9.3节中的方法来求解:</p>
-<script type="math/tex; mode=display">
-\begin{align}
-\int \frac{dP}{P}& =\int k dt\notag\\
-\ln{\mid P\mid} &= kt + C\notag\\
-\mid P\mid &= e^{kt + C} = e^Ce^{kt}\notag\\
-P &= Ae^{kt}\qquad\text{其中}\qquad A = e^C
-\end{align}</script><h5 id="初值问题"><a href="#初值问题" class="headerlink" title="初值问题"></a>初值问题</h5><p>将 $t = 0$ 代入, 得</p>
-<script type="math/tex; mode=display">
-P(0) = Ae^{k\cdot0} = A</script><p>则初值问题</p>
-<script type="math/tex; mode=display">
-\frac{dP}{dt} = kP\qquad P(0) = P_0</script><p>的解集为:</p>
-<script type="math/tex; mode=display">
-P(t) = P_oe^{kt}
-\qquad\text{或}\qquad
-\frac1{P}\frac{dP}{dt} = k</script><h5 id="考虑移民"><a href="#考虑移民" class="headerlink" title="考虑移民"></a>考虑移民</h5><p>设移民速率为常量 $C$ , 则式 $(39)$ 还可写成</p>
-<script type="math/tex; mode=display">
-\frac{dP}{dt} = kP(t) - m</script><h4 id="Logistic模型"><a href="#Logistic模型" class="headerlink" title="Logistic模型"></a>Logistic模型</h4><h5 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h5><p>考虑人口环境承载容量 $M$ , 我们认为, 在人口 $P$ 较小时, 人口的增长情况接近于<em>自然增长模型</em>, 即</p>
-<script type="math/tex; mode=display">
-\frac{dP}{dt}\approx kP\qquad\text{当}P\text{较小}时</script><p>这说明人口的增长率在一开始与其数量大约成正比.</p>
-<p>当人口接近甚至超过人口环境承载容量时, 人口 $P$ 的增长速度会减慢甚至变为负增长.</p>
-<p>用以描述上述人口增长规律的一个最简单模型如下:</p>
-<script type="math/tex; mode=display">
-\frac1{P}\frac{dP}{dt} = k\left(1 - \frac{P}{M}\right)</script><p>将等式两端同时乘以 $P$ , 我们便得到了<strong>Logistic微分方程</strong>:</p>
-<script type="math/tex; mode=display">
-\frac{dP}{dt} = kP\left(1 - \frac{P}{M}\right)</script><h5 id="解-1"><a href="#解-1" class="headerlink" title="解"></a>解</h5><p>式 $(45)$ 是可分离变量的微分方程, 故可以使用9.3节中的方式求解:</p>
-<script type="math/tex; mode=display">
-\int\frac{dP}{P(1 - P/M)} = \int\frac{M}{P(M - P)}\\</script><p>最终化简得到:</p>
-<script type="math/tex; mode=display">
-P(t) = \frac{M}{1 + Ae^{-kt}}\qquad\text{其中}\qquad A = \frac{M - P_o}{P_0}</script><p>我们可以得到:</p>
-<script type="math/tex; mode=display">
-\lim_{t\to\infty}P(t) = M</script><p>这与我们的预期相符.</p>
-<h4 id="其他人口增长模型"><a href="#其他人口增长模型" class="headerlink" title="其他人口增长模型"></a>其他人口增长模型</h4><h5 id="考虑定期收割的模型"><a href="#考虑定期收割的模型" class="headerlink" title="考虑定期收割的模型"></a>考虑定期收割的模型</h5><script type="math/tex; mode=display">
-\frac{dP}{dt} = kP\left(1 - \frac{P}{M}\right) - c</script><h5 id="考虑最小人口规模的模型"><a href="#考虑最小人口规模的模型" class="headerlink" title="考虑最小人口规模的模型"></a>考虑最小人口规模的模型</h5><p>考虑到在人口低于一定数目时, 物种间会变得稀疏, 从而使人口增长率进一步下降, 我们有如下模型:</p>
-<script type="math/tex; mode=display">
-\frac{dP}{dt} = kP\left(1 - \frac{P}{M}\right)\left(1 - \frac{m}{P}\right)</script><p>其中 $m$ 代表最小人口规模.</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -250,112 +208,21 @@ P(t) = \frac{M}{1 + Ae^{-kt}}\qquad\text{其中}\qquad A = \frac{M - P_o}{P_0}</
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2024/05/04/Calculus/Calculus%E7%AC%94%E8%AE%B0-9-5-%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Calculus笔记-9.5-线性微分方程
-        
-      </div>
-    </a>
   
   
-    <a href="/2024/05/04/Calculus/Calculus%E7%AC%94%E8%AE%B0-9-3-%E5%8F%AF%E5%88%86%E7%A6%BB%E5%8F%98%E9%87%8F%E7%9A%84%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Calculus笔记-9.3-可分离变量的微分方程</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#9-4-%E4%BA%BA%E5%8F%A3%E6%A8%A1%E5%9E%8B-Models-for-Population-Growth"><span class="toc-number">1.</span> <span class="toc-text">9.4 人口模型(Models for Population Growth)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E7%84%B6%E5%A2%9E%E9%95%BF%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.1.</span> <span class="toc-text">自然增长模型</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89"><span class="toc-number">1.1.1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%A7%A3"><span class="toc-number">1.1.2.</span> <span class="toc-text">解</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%88%9D%E5%80%BC%E9%97%AE%E9%A2%98"><span class="toc-number">1.1.3.</span> <span class="toc-text">初值问题</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%80%83%E8%99%91%E7%A7%BB%E6%B0%91"><span class="toc-number">1.1.4.</span> <span class="toc-text">考虑移民</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Logistic%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.2.</span> <span class="toc-text">Logistic模型</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89-1"><span class="toc-number">1.2.1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%A7%A3-1"><span class="toc-number">1.2.2.</span> <span class="toc-text">解</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E4%BA%BA%E5%8F%A3%E5%A2%9E%E9%95%BF%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.3.</span> <span class="toc-text">其他人口增长模型</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%80%83%E8%99%91%E5%AE%9A%E6%9C%9F%E6%94%B6%E5%89%B2%E7%9A%84%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.3.1.</span> <span class="toc-text">考虑定期收割的模型</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%80%83%E8%99%91%E6%9C%80%E5%B0%8F%E4%BA%BA%E5%8F%A3%E8%A7%84%E6%A8%A1%E7%9A%84%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.3.2.</span> <span class="toc-text">考虑最小人口规模的模型</span></a></li></ol></li></ol></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
-
-  <section id="comments" class="comments">
-    <style>
-      .comments {
-        margin: 30px;
-        padding: 10px;
-        background: #fff
-      }
-  
-      @media screen and (max-width:800px) {
-        .comments {
-          margin: auto;
-          padding: 10px;
-          background: #fff
-        }
-      }
-    </style>
-    <div id="vcomment" class="comment"></div>
-<script>
-    var notify = 'false' == true ? true : false;
-    var verify = 'false' == true ? true : false;
-    new Valine({
-        av: AV,
-        el: '#vcomment',
-        notify: notify,
-        app_id: "LSV1WdB1OuM9Nbv4fcnQqflJ-gzGzoHsz",
-        app_key: "KNLtqt7yPd32qubY7u2xCa7w",
-        placeholder: "Just go go",
-        avatar:"mm",
-    });
-</script>
-  </section>
-  
           </div>
         </div>
       </div>
@@ -376,8 +243,8 @@ P(t) = \frac{M}{1 + Ae^{-kt}}\qquad\text{其中}\qquad A = \frac{M - P_o}{P_0}</
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

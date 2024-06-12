@@ -165,6 +165,156 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Calculus/Calculus笔记-16-4-格林公式" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/06/12/Calculus/Calculus%E7%AC%94%E8%AE%B0-16-4-%E6%A0%BC%E6%9E%97%E5%85%AC%E5%BC%8F/">Calculus笔记-16.4-格林公式</a>
+    </h1>
+  
+
+        
+        <a href="/2024/06/12/Calculus/Calculus%E7%AC%94%E8%AE%B0-16-4-%E6%A0%BC%E6%9E%97%E5%85%AC%E5%BC%8F/" class="archive-article-date">
+  	<time datetime="2024-06-12T03:42:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-06-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Calculus笔记-16-4-格林公式"><a href="#Calculus笔记-16-4-格林公式" class="headerlink" title="Calculus笔记-16.4-格林公式"></a>Calculus笔记-16.4-格林公式</h3><p>我们约定给定区域的正向绕序为沿边界的逆时针方向，因此对于由曲线 $C$ 围成的简单连通区域 $D$ ，若 $C$ 由参数方程 $\mathbf r(t),\ a\le t\le b$ 确定，则其 $D$ 总在边界 $C$ 的左边：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406121147830.png" alt=""></p>
+<p>则我们有格林公式：</p>
+<h4 id="格林公式-Green’s-Theorem"><a href="#格林公式-Green’s-Theorem" class="headerlink" title="格林公式(Green’s Theorem)"></a>格林公式(Green’s Theorem)</h4><p>令 $C$ 为一条正向绕序且（分段）光滑的简单闭合曲线，而 $D$ 为 $C$ 所围成的简单连通区域，且 $P$ 和 $Q$ 在包含 $D$ 的开简单连通区域内都有一阶连续偏导数，则有</p>
+<script type="math/tex; mode=display">
+\int_CPdx + Qdy = 
+\iint\limits_D\left(\frac{\partial Q}{\partial x} - 
+\frac{\partial P}{\partial y}\right)dA
+\tag{4.1}\label{格林公式1}</script><ul>
+<li>符号<script type="math/tex; mode=display">
+  \oint_C Pdx + Qdy</script>  被用来表示正向绕序、分段光滑的简单闭合曲线的直线积分。另一种表示 $D$ 的正向曲线边界的方法是 $\partial D$ ，则格林公式可被写为<script type="math/tex; mode=display">
+  \iint\limits_D\left(\frac{\partial Q}{\partial x} - 
+  \frac{\partial P}{\partial y}\right)dA = 
+  \int_{\partial D}Pdx + Qdy
+  \tag{4.2}\label{格林公式2}</script></li>
+</ul>
+<p>格林公式可被看为二重积分的微积分基本定理，它揭示了闭合曲线的直线积分和其所围成的平面的二重积分之间的关系。</p>
+<h5 id="格林公式的扩展"><a href="#格林公式的扩展" class="headerlink" title="格林公式的扩展"></a>格林公式的扩展</h5><ul>
+<li><p>格林公式除了可以用在连续的区域中，也可以被扩展到有限个区域的并中：</p>
+<p>  <img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406121426549.png" alt=""></p>
+<p>  如图，设 $D = D_1\cup D_2$ ， $D_1$ 和 $D_2$ 分别为有向曲线 $C_1,\ C_3$ 和 $C_2,\ -C_3$ 所围成的简单连通区域，则</p>
+<script type="math/tex; mode=display">
+  \int_{C_1\cup C_3}Pdx + Qdy = 
+  \iint\limits_{D_1}\left(\frac{\partial Q}{\partial x} - 
+  \frac{\partial P}{\partial y}\right)dA</script><script type="math/tex; mode=display">
+  \int_{C_2\cup -C_3}Pdx + Qdy = 
+  \iint\limits_{D_2}\left(\frac{\partial Q}{\partial x} - 
+  \frac{\partial P}{\partial y}\right)dA</script><p>  将两式相加，我们得到：</p>
+<script type="math/tex; mode=display">
+  \int_{C_1\cup C_2}Pdx + Qdy = 
+  \iint\limits_D\left(\frac{\partial Q}{\partial x} - 
+  \frac{\partial P}{\partial y}\right)dA</script><p>  因此，我们可以将格林公式扩展到任意有限个不互相包含的简单连通区间中。</p>
+</li>
+<li><p>格林公式也可以被扩展到非简单连通区域中：</p>
+<p>  <img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406121440045.png" alt=""></p>
+<p>  如图，区域 $D$ 由两简单闭合曲线 $C_1$ 和 $C_2$ 围成。若我们规定曲线 $C_2$ 的正方向为顺时针方向，则 $D$ 同时位于两个曲线的左侧。</p>
+<p>  <img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406121440448.png" alt=""></p>
+<p>  则我们可以将 $D$ 分为两个区域 $D’$ 和 $D’’$ ，并分别计算出它们的直线积分：</p>
+<script type="math/tex; mode=display">
+  \begin{align}
+  \iint\limits_D\left(\frac{\partial Q}{\partial x} - 
+  \frac{\partial P}{\partial y}\right)dA &= 
+  \iint\limits_{D'}\left(\frac{\partial Q}{\partial x} - 
+  \frac{\partial P}{\partial y}\right)dA + 
+  \iint\limits_{D''}\left(\frac{\partial Q}{\partial x} - 
+  \frac{\partial P}{\partial y}\right)dA \\&=
+  \int_{\partial D'}Pdx + Qdy + 
+  \int_{\partial D''}Pdx + Qdy
+  \end{align}</script><p>  两个区域的公共有向曲线形状相同、方向相反，因此将它们相加，我们可以得到：</p>
+<script type="math/tex; mode=display">
+  \iint\limits_D\left(\frac{\partial Q}{\partial x} - 
+  \frac{\partial P}{\partial y}\right)dA = 
+  \int_{C_1\cup C_2}Pdx + Qdy = 
+  \int_CPdx + Qdy</script><p>  这就是对区域 $D$ 的格林公式。</p>
+</li>
+</ul>
+<h4 id="保守向量场判定定理的证明"><a href="#保守向量场判定定理的证明" class="headerlink" title="保守向量场判定定理的证明"></a>保守向量场判定定理的证明</h4><p>设 $\mathbf F = P\mathbf i + Q\mathbf j$ 是在开连通区域 $R$ 内有定义的向量场，其中 $P$ 和 $Q$ 均在 $R$ 内有一阶偏导数，且</p>
+<script type="math/tex; mode=display">
+\frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x}\qquad\text{在 $R$ 内都成立}</script><ul>
+<li><p>设 $D$ 为简单闭合曲线 $C$ 所围成的在 $R$ 内的简单连通区域，</p>
+<p>  则</p>
+<script type="math/tex; mode=display">
+  \int_C \mathbf F\cdot d\mathbf r = 
+  \iint\limits_D\left(
+  \frac{\partial Q}{\partial x} - 
+  \frac{\partial P}{\partial y}
+  \right) 
+  dA = 0</script><p>  因此 $\mathbf F$ 的直线积分路径无关， $\mathbf F$ 是一个保守向量场。</p>
+</li>
+<li><p>对于非简单闭合曲线所围成的区域，其可以被分成有限个简单连通区域的并，则也可以通过格林公式证明 $\mathbf F$ 的直线积分路径无关，而 $\mathbf F$ 是一个保守向量场。</p>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数学</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Calculus</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2024/06/12/Calculus/Calculus%E7%AC%94%E8%AE%B0-16-4-%E6%A0%BC%E6%9E%97%E5%85%AC%E5%BC%8F/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+  
     <article id="post-社会科学/本体论视域下的战争起源" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -199,11 +349,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">人文社科</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">哲学</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">哲学</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">人文社科</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -361,11 +511,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">人文社科</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">哲学</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">哲学</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">人文社科</a>
         		</li>
       		
 		</ul>
@@ -855,85 +1005,6 @@
 
 
   
-    <article id="post-Calculus/Calculus笔记-15-8-球坐标的三重积分" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/05/06/Calculus/Calculus%E7%AC%94%E8%AE%B0-15-8-%E7%90%83%E5%9D%90%E6%A0%87%E7%9A%84%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86/">Calculus笔记-15.8-球坐标的三重积分</a>
-    </h1>
-  
-
-        
-        <a href="/2024/05/06/Calculus/Calculus%E7%AC%94%E8%AE%B0-15-8-%E7%90%83%E5%9D%90%E6%A0%87%E7%9A%84%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86/" class="archive-article-date">
-  	<time datetime="2024-05-06T03:58:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-05-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="Calculus笔记-15-8-球坐标的三重积分"><a href="#Calculus笔记-15-8-球坐标的三重积分" class="headerlink" title="Calculus笔记-15.8-球坐标的三重积分"></a>Calculus笔记-15.8-球坐标的三重积分</h3>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数学</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Calculus</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/05/06/Calculus/Calculus%E7%AC%94%E8%AE%B0-15-8-%E7%90%83%E5%9D%90%E6%A0%87%E7%9A%84%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1052,6 +1123,14 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">数学</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Calculus</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">计算机科学</a>
               </li>
              
@@ -1060,11 +1139,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">数学</a>
+                <a href="javascript:void(0)" class="js-tag color2">计算机图形学</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Calculus</a>
+                <a href="javascript:void(0)" class="js-tag color3">哲学</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1076,7 +1155,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">哲学</a>
+                <a href="javascript:void(0)" class="js-tag color5">线性代数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">微积分</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1085,18 +1168,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">管理学</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">计算机图形学</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">线性代数</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">微积分</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1112,6 +1183,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">边缘计算</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
@@ -1120,15 +1195,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">边缘计算</a>
+                <a href="javascript:void(0)" class="js-tag color1">随笔与日记</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">电影</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">随笔与日记</a>
               </li>
             
             <div class="clearfix"></div>
