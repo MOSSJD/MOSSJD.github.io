@@ -6,34 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://mossjd.github.io">
-  <title>GAMES101笔记：Lecture02-线性代数复习 | MOSSJD的小站</title>
+  <title>Calculus笔记-16.6-参数曲面及面积 | MOSSJD的小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="GAMES101笔记：Lecture02 线性代数复习">
+  <meta name="description" content="Calculus笔记-16.6-参数曲面及面积">
 <meta property="og:type" content="article">
-<meta property="og:title" content="GAMES101笔记：Lecture02-线性代数复习">
-<meta property="og:url" content="https://mossjd.github.io/2024/05/02/GAMES101/Lecture02-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E5%A4%8D%E4%B9%A0/index.html">
+<meta property="og:title" content="Calculus笔记-16.6-参数曲面及面积">
+<meta property="og:url" content="https://mossjd.github.io/2024/06/20/Calculus/Calculus%E7%AC%94%E8%AE%B0-16-6-%E5%8F%82%E6%95%B0%E6%9B%B2%E9%9D%A2%E5%8F%8A%E9%9D%A2%E7%A7%AF/index.html">
 <meta property="og:site_name" content="MOSSJD的小站">
-<meta property="og:description" content="GAMES101笔记：Lecture02 线性代数复习">
+<meta property="og:description" content="Calculus笔记-16.6-参数曲面及面积">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405021734365.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405021741584.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405021746655.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405021752289.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405021800860.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405021814466.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405021816015.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405021817304.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405021823506.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405021854776.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405021855124.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405021855994.png">
-<meta property="article:published_time" content="2024-05-01T23:00:32.000Z">
-<meta property="article:modified_time" content="2024-05-17T03:04:33.818Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406201355462.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406201605864.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406201609827.png">
+<meta property="article:published_time" content="2024-06-20T05:38:52.000Z">
+<meta property="article:modified_time" content="2024-06-20T08:36:31.008Z">
 <meta property="article:author" content="MOSSJD">
-<meta property="article:tag" content="计算机科学">
-<meta property="article:tag" content="GAMES101">
+<meta property="article:tag" content="calculus, python, philosophy, c++">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405021734365.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406201355462.png">
   
     <link rel="alternative" href="/atom.xml" title="MOSSJD的小站" type="application/atom+xml">
   
@@ -179,298 +169,104 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-GAMES101/Lecture02-线性代数复习" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Calculus/Calculus笔记-16-6-参数曲面及面积" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      GAMES101笔记：Lecture02-线性代数复习
+      Calculus笔记-16.6-参数曲面及面积
     </h1>
   
 
         
-        <a href="/2024/05/02/GAMES101/Lecture02-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E5%A4%8D%E4%B9%A0/" class="archive-article-date">
-  	<time datetime="2024-05-01T23:00:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-05-02</time>
+        <a href="/2024/06/20/Calculus/Calculus%E7%AC%94%E8%AE%B0-16-6-%E5%8F%82%E6%95%B0%E6%9B%B2%E9%9D%A2%E5%8F%8A%E9%9D%A2%E7%A7%AF/" class="archive-article-date">
+  	<time datetime="2024-06-20T05:38:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-06-20</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="GAMES101笔记：Lecture02-线性代数复习"><a href="#GAMES101笔记：Lecture02-线性代数复习" class="headerlink" title="GAMES101笔记：Lecture02 线性代数复习"></a>GAMES101笔记：Lecture02 线性代数复习</h2><span id="more"></span>
-<h3 id="图形学的依赖知识"><a href="#图形学的依赖知识" class="headerlink" title="图形学的依赖知识"></a>图形学的依赖知识</h3><ul>
-<li>数学知识<ul>
-<li>线性代数、微积分、统计</li>
-</ul>
-</li>
-<li><p>物理</p>
-<ul>
-<li>光学、力学</li>
-</ul>
-</li>
-<li><p>杂项</p>
-<ul>
-<li>信号处理</li>
-<li>数值分析</li>
-</ul>
-</li>
-<li>一些美感</li>
-</ul>
-<h4 id="本课程内容"><a href="#本课程内容" class="headerlink" title="本课程内容"></a>本课程内容</h4><ul>
-<li>更依赖于线性代数<ul>
-<li>向量（点乘、叉乘······）</li>
-<li>矩阵（矩阵-矩阵、矩阵-向量······）</li>
-</ul>
-</li>
-</ul>
-<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405021734365.png" alt=""></p>
-<p>蜗牛的旋转：</p>
-<ul>
-<li>插值</li>
-<li>粒子光效</li>
-</ul>
-<h3 id="向量"><a href="#向量" class="headerlink" title="向量"></a>向量</h3><p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405021741584.png" alt=""></p>
-<ul>
-<li>通常写为 $\vec{a}$ 或 $\boldsymbol{a}$ </li>
-<li>或用起点/终点 $\overrightarrow{AB} = B - A$ </li>
-<li>具有方向与长度</li>
-<li>没有绝对的起点</li>
-</ul>
-<h4 id="向量正则化"><a href="#向量正则化" class="headerlink" title="向量正则化"></a>向量正则化</h4><ul>
-<li>向量的长度（模）写作 $|{\vec{a}}|$</li>
-<li>单位向量<ul>
-<li>长度为 $1$ 的向量</li>
-<li>寻找给定向量的单位向量（正则化）： $\hat{a} = \vec{a}/|\vec{a}|$</li>
-<li>用于表示方向</li>
-</ul>
-</li>
-</ul>
-<h4 id="向量求和"><a href="#向量求和" class="headerlink" title="向量求和"></a>向量求和</h4><p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405021746655.png" alt=""></p>
-<ul>
-<li>几何上：平行四边形法则和三角形法则</li>
-<li>代数上：直接将坐标相加</li>
-</ul>
-<h4 id="笛卡尔坐标系"><a href="#笛卡尔坐标系" class="headerlink" title="笛卡尔坐标系"></a>笛卡尔坐标系</h4><p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405021752289.png" alt=""></p>
-<ul>
-<li>X和Y可以是任何（一般是正交单位）向量</li>
-</ul>
+        <h3 id="Calculus笔记-16-6-参数曲面及面积"><a href="#Calculus笔记-16-6-参数曲面及面积" class="headerlink" title="Calculus笔记-16.6-参数曲面及面积"></a>Calculus笔记-16.6-参数曲面及面积</h3><span id="more"></span>
+<h4 id="参数曲面"><a href="#参数曲面" class="headerlink" title="参数曲面"></a>参数曲面</h4><p>正如参数曲线一样，参数曲面是一个向量值函数，但其自变量有两个。</p>
+<p>设</p>
 <script type="math/tex; mode=display">
-\mathbf{A} = \begin{pmatrix}x\\y\end{pmatrix}
-\qquad\mathbf{A}^T = \begin{pmatrix}x, y\end{pmatrix}
-\qquad\|\mathbf{A}\| = \sqrt{x^2 + y^2}</script><ul>
-<li>在图形学上，默认处理列向量</li>
-<li>定义直角坐标的意义：<ul>
-<li>方便计算向量长度</li>
-</ul>
-</li>
-</ul>
-<h4 id="向量乘法"><a href="#向量乘法" class="headerlink" title="向量乘法"></a>向量乘法</h4><ul>
-<li>点乘</li>
-<li>叉乘</li>
-<li>正交基和坐标系(Orthonormal bases and coordinate frames)</li>
-</ul>
-<h5 id="点（数）乘"><a href="#点（数）乘" class="headerlink" title="点（数）乘"></a>点（数）乘</h5><p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405021800860.png" alt=""></p>
+\mathbf r(u, v) = 
+x(u, v)\mathbf i + 
+y(u, v)\mathbf j + 
+z(u, v)\mathbf k
+\tag{6.1}\label{曲面参数方程}</script><p>为定义在 $uv$ 平面内的区域 $D$ 上的向量值函数，而 $\mathbf r$ 的三个分量函数 $x,\ y,\ z$ 都为定义域为 $D$ ，自变量为 $u$ 和 $v$ 的二元函数。所有在 $\mathbb R^3$ 内，在 $(u, v)$ 遍历整个 $D$ 时满足</p>
 <script type="math/tex; mode=display">
-\vec{a}\cdot\vec{b} = \|\vec{a}\|\|\vec{b}\|\cos{\theta}</script><script type="math/tex; mode=display">
-\cos{\theta} = \frac{\vec{a}\cdot\vec{b}}{\|\vec{a}\|\|\vec{b}\|}</script><ul>
-<li><p>对于单位向量：</p>
+x = x(u, v)\qquad y = y(u, v)\qquad z = z(u, v)
+\tag{6.2}\label{曲面分量方程}</script><p>的点集 $(x, y, z)$ 被称为<strong>参数曲面</strong>(<strong>parametric surface</strong>) $S$ ，而方程 $\eqref{曲面分量方程}$ 被称作 $S$ 的<strong>参数方程</strong>(<strong>parametric equations</strong>)。任何 $u$ 和 $v$ 的取值都对应 $S$ 上的一个点，而所有 $u$ 和 $v$ 的取值则对应整个曲面 $S$ 。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406201355462.png" alt=""></p>
+<p>因此曲面 $S$ 被遍历整个 $D$ 时 $(u, v)$ 所对应的位矢 $\mathbf r(u, v)$ 的箭头终端所指示出来（如上图）。这反映出曲面的参数方程是一个从 $(u, v)$ 到 $(x, y, z)$ 的映射。</p>
+<h4 id="网格线-grid-curves"><a href="#网格线-grid-curves" class="headerlink" title="网格线(grid curves)"></a>网格线(grid curves)</h4><p>给定曲面 $S$ 的参数方程 $\mathbf r(u, v)$ ，若令 $u = u_0$ ，则 $\mathbf r(u_0, v)$ 成为关于 $v$ 的一元向量值函数；令 $v = v_0$ ，则 $\mathbf r(u, v_0)$ 成为关于 $u$ 的一元向量值函数。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406201605864.png" alt=""></p>
+<p>如上图，这两个函数所分别确定的两条曲线被称为<strong>网格线</strong>。</p>
+<h4 id="旋转曲面"><a href="#旋转曲面" class="headerlink" title="旋转曲面"></a>旋转曲面</h4><p>我们可以用参数方程来表示旋转曲面。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406201609827.png" alt=""></p>
+<p>比如，想要得到将曲线 $y = f(x),\ a\le x\le b,\text{ 其中 } f(x)\ge 0$ 绕 $x$ 轴旋转所得到的曲面，则令 $\theta$ 为上图中的旋转角，若 $(x, y, z)$ 是 $S$ 上的点，则</p>
 <script type="math/tex; mode=display">
-  \cos{\theta} = \hat{a}\cdot\hat{b}</script></li>
-<li><p>向量的点乘是一个<strong>数</strong></p>
-</li>
-<li><p>运算法则（性质）</p>
-</li>
-</ul>
+x = x\qquad y = f(x)\cos\theta\qquad z = f(x)\sin\theta
+\tag{6.3}\label{旋转曲面参数方程}</script><p>则我们将 $x$ 和 $\theta$ 看作 $\eqref{旋转曲面参数方程}$ 的参数，其定义域为 $a\le x\le b,\ 0\le\theta\le 2\pi$ 。</p>
+<p>绕其他轴旋转而得的旋转曲面也同理。</p>
+<h4 id="切平面-Tangent-Planes"><a href="#切平面-Tangent-Planes" class="headerlink" title="切平面(Tangent Planes)"></a>切平面(Tangent Planes)</h4><p>为寻找由向量值函数</p>
 <script type="math/tex; mode=display">
-\vec{a}\cdot\vec{b} = \vec{b}\cdot\vec{a}\text{（交换律）}</script><script type="math/tex; mode=display">
-\vec{a}\cdot(\vec{b} + \vec{c}) = 
-\vec{a}\cdot\vec{b} + \vec{a}\cdot\vec{c}\text{（分配律）}</script><script type="math/tex; mode=display">
-(k\vec{a})\cdot\vec{b} = \vec{a}\cdot(k\vec{b}) = 
-k(\vec{a}\cdot\vec{b})\text{（结合律）}</script><h6 id="笛卡尔坐标系中的点乘"><a href="#笛卡尔坐标系中的点乘" class="headerlink" title="笛卡尔坐标系中的点乘"></a>笛卡尔坐标系中的点乘</h6><ul>
-<li><p>按元素（Component-wise）分别做乘法再相加</p>
-<ul>
-<li><p>在二维空间中：</p>
+\mathbf r(u, v) = 
+x(u, v)\mathbf i + 
+y(u, v)\mathbf j + 
+z(u, v)\mathbf k</script><p>所确定的参数曲面 $S$ 在 $P_0$ （其位矢为 $\mathbf r(u_0, v_0)$ ）的切平面，我们可以分别设 $u = u_0$ ， $v = v_0$ 而分别得到 $S$ 在 $P_0$ 的网格线，其切向量分别为</p>
 <script type="math/tex; mode=display">
-  \vec{a}\cdot\vec{b} = 
-  \begin{pmatrix}x_a\\y_a\end{pmatrix}\cdot
-  \begin{pmatrix}x_b\\y_b\end{pmatrix} = 
-  x_ax_b + y_ay_b</script></li>
-<li><p>在三维空间中：</p>
+\mathbf r_v = 
+\frac{\partial x}{\partial v}(u_0, v_0)\mathbf i + 
+\frac{\partial y}{\partial v}(u_0, v_0)\mathbf j + 
+\frac{\partial z}{\partial v}(u_0, v_0)\mathbf k
+\tag{6.4}\label{切向量1}</script><script type="math/tex; mode=display">
+\mathbf r_u = 
+\frac{\partial x}{\partial u}(u_0, v_0)\mathbf i + 
+\frac{\partial y}{\partial u}(u_0, v_0)\mathbf j + 
+\frac{\partial z}{\partial u}(u_0, v_0)\mathbf k
+\tag{6.5}\label{切向量2}</script><p>若 $\mathbf r_u\times\mathbf r_v\ne\mathbf 0$ ，则我们称 $S$ 为<strong>光滑</strong>(<strong>smooth</strong>)曲面。对于光滑曲面，其<strong>切平面</strong>为包含切向量 $\mathbf r_u$ 和 $\mathbf r_v$ ，且以 $\mathbf r_u\times\mathbf r_v$ 为法向量的平面。</p>
+<h4 id="曲面面积"><a href="#曲面面积" class="headerlink" title="曲面面积"></a>曲面面积</h4><p>曲面面积的推导已在 $15.5$ 节中进行过，在此不再赘述。现给出定义：</p>
+<h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><script type="math/tex; mode=display">
+\text{若光滑参数曲面 $S$ 由方程}\\
+\mathbf r(u, v) = x(u, v)\mathbf i + y(u, v)\mathbf j + 
+z(u, v)\mathbf k\qquad(u, v)\in D\\
+\text{给出，且 $S$ 在 $(u, v)$ 在整个参数定义域 $D$ 内变化时只被覆盖过一次，}\\
+\text{则 $S$ 的表面积为}\\
+A(S) = \iint\limits_D|\mathbf r_u\times\mathbf r_v|dA\\
+\text{其中}
+\qquad\mathbf r_u = 
+\frac{\partial x}{\partial u}\mathbf i + 
+\frac{\partial y}{\partial u}\mathbf j + 
+\frac{\partial z}{\partial u}\mathbf k\qquad
+\mathbf r_v = 
+\frac{\partial x}{\partial v}\mathbf i + 
+\frac{\partial y}{\partial v}\mathbf j + 
+\frac{\partial z}{\partial v}\mathbf k.
+\tag{6.6}\label{曲面面积的定义}</script><h4 id="函数图像的面积"><a href="#函数图像的面积" class="headerlink" title="函数图像的面积"></a>函数图像的面积</h4><p>令方程 $z = f(x, y)$ ，其中 $(x, y)$ 在 $D$ 内而 $f$ 有连续偏导数，我们将 $(x, y)$ 看作参数。其参数方程为</p>
 <script type="math/tex; mode=display">
-  \vec{a}\cdot\vec{b} = 
-  \begin{pmatrix}x_a\\y_a\\z_a\end{pmatrix}\cdot
-  \begin{pmatrix}x_b\\y_b\\z_b\end{pmatrix} = 
-  x_ax_b + y_ay_b + z_az_b</script></li>
-</ul>
-</li>
-</ul>
-<h6 id="图形学中的点乘"><a href="#图形学中的点乘" class="headerlink" title="图形学中的点乘"></a>图形学中的点乘</h6><ul>
-<li><p>寻找两个向量的夹角</p>
-<p>  （比如光源和照射表面的夹角余弦）</p>
-</li>
-<li><p>寻找一个向量在另一个向量上的投影</p>
-</li>
-</ul>
-<h6 id="投影与点乘"><a href="#投影与点乘" class="headerlink" title="投影与点乘"></a>投影与点乘</h6><p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405021814466.png" alt=""></p>
-<ul>
-<li>$\vec{b}_\perp$： $\vec{b}$ 在 $\vec{a}$ 上的投影<ul>
-<li>$\vec{b}_\perp$ 一定沿着 $\vec{a}$ （或 $\hat{a}$ ）的方向<ul>
-<li>$\vec{b}_\perp = k\hat{a}$</li>
-</ul>
-</li>
-<li>模长k是多少？<ul>
-<li>$k = |\vec{b}_\perp| = |\vec{b}|\cos{\theta}$</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h6 id="寻找投影的好处"><a href="#寻找投影的好处" class="headerlink" title="寻找投影的好处"></a>寻找投影的好处</h6><p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405021816015.png" alt=""></p>
-<ul>
-<li>测量两个方向有多接近</li>
-<li>分解向量（上图）</li>
-<li>确定向前/向后（下图）：<ul>
-<li>根据点乘的正负性判断</li>
-</ul>
-</li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405021817304.png" alt=""></p>
-<h5 id="向量的叉乘"><a href="#向量的叉乘" class="headerlink" title="向量的叉乘"></a>向量的叉乘</h5><p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405021823506.png" alt=""></p>
-<ul>
-<li>叉乘的结果与两个输入向量垂直</li>
-<li>由右手法则确定方向</li>
-<li>在建立坐标系时很有用</li>
-</ul>
-<h6 id="向量叉乘的性质"><a href="#向量叉乘的性质" class="headerlink" title="向量叉乘的性质"></a>向量叉乘的性质</h6><script type="math/tex; mode=display">
-\begin{align}
-\vec{x}\times\vec{y} = +\vec{z}\\
-\vec{y}\times\vec{x} = -\vec{z}\\
-\vec{y}\times\vec{z} = +\vec{x}\\
-\vec{z}\times\vec{y} = -\vec{x}\\
-\vec{z}\times\vec{x} = +\vec{y}\\
-\vec{x}\times\vec{z} = -\vec{y}\\
-\\
-\vec{a}\times\vec{b} = -\vec{b}\times\vec{a}\\
-\vec{a}\times\vec{a} = \vec{0}\\
-\vec{a}\times(\vec{b} + \vec{c}) = 
-\vec{a}\times\vec{b} + \vec{a}\times\vec{c}\\
-\vec{a}\times(k\vec{b}) = k(\vec{a}\times\vec{b})
-\end{align}</script><h6 id="向量叉乘的坐标系法则"><a href="#向量叉乘的坐标系法则" class="headerlink" title="向量叉乘的坐标系法则"></a>向量叉乘的坐标系法则</h6><script type="math/tex; mode=display">
-\vec{a}\times\vec{b} = 
+x = x\qquad y = y\qquad z = f(x, y)</script><p>则</p>
+<script type="math/tex; mode=display">
+\mathbf r_x = \mathbf i + f_x(x, y)\mathbf k</script><script type="math/tex; mode=display">
+\mathbf r_y = \mathbf j + f_y(x, y)\mathbf k</script><p>则</p>
+<script type="math/tex; mode=display">
+\mathbf r_x\times\mathbf r_x = 
 \begin{vmatrix}
-\hat{i} & \hat{j} & \hat{k}
-\\ x_a & y_a & z_a
-\\ x_b & y_b & z_b
-\end{vmatrix}</script><h6 id="叉乘在图形学中的应用"><a href="#叉乘在图形学中的应用" class="headerlink" title="叉乘在图形学中的应用"></a>叉乘在图形学中的应用</h6><p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405021854776.png" alt=""></p>
-<ul>
-<li><p>判定左/右</p>
-<p>  <img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405021855124.png" alt=""></p>
-<p>  如上图，当$\vec{a}\times\vec{b}$ 朝向正方向时，说明 $\vec{b}$ 在 $\vec{a}$ 的左侧</p>
-</li>
-<li><p>判定内/外</p>
-<p>  <img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405021855994.png" alt=""></p>
-<p>  当</p>
+\mathbf i & \mathbf j & \mathbf k\\
+1 & 0 & f_x\\
+0 & 1 & f_y
+\end{vmatrix}
+ = -f_x\mathbf i - f_y\mathbf j + \mathbf k</script><p>因此有</p>
 <script type="math/tex; mode=display">
-  \overrightarrow{AB}\times\overrightarrow{AP},\ 
-  \overrightarrow{BC}\times\overrightarrow{BP},\ 
-  \overrightarrow{CA}\times\overrightarrow{CP}</script><p>  朝向同侧时，P点在三角形ABC内部</p>
-<ul>
-<li>三角形的绕序不影响结果</li>
-<li>当叉乘同为零向量时怎么判断：<ul>
-<li>Corner Case（自己决定）</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h5 id="正交基-坐标系"><a href="#正交基-坐标系" class="headerlink" title="正交基/坐标系"></a>正交基/坐标系</h5><ul>
-<li>在表示点、位置和方位时很重要</li>
-<li>常用的坐标系<ul>
-<li>Global, local, world, model, parts of model···</li>
-</ul>
-</li>
-<li>重要问题：在坐标系/空间基之间的转换</li>
-</ul>
-<h6 id="正交基的定义"><a href="#正交基的定义" class="headerlink" title="正交基的定义"></a>正交基的定义</h6><ul>
-<li><p>任何三个三维向量的集满足：</p>
+|\mathbf r_x\times\mathbf r_x| = 
+\sqrt{f_x^2 + f_y^2 + 1} = \sqrt{1 + f_x^2 + f_y^2}</script><p>则</p>
 <script type="math/tex; mode=display">
-  \|\vec{u}\| = \|\vec{v}\| = \|\vec{w}\| = 1</script><script type="math/tex; mode=display">
-  \vec{u}\cdot\vec{v} = \vec{v}\cdot\vec{w} = \vec{u}\cdot\vec{w} = 0</script><script type="math/tex; mode=display">
-  \vec{w} = \vec{u}\times\vec{v}\text{（右手系）}</script><script type="math/tex; mode=display">
-  \vec{p} = 
-  \underbrace{(\vec{p}\cdot\vec{u})}_\text{(投影长度)}\vec{u} + 
-  (\vec{p}\cdot\vec{v})\vec{v} + (\vec{p}\cdot\vec{w})\vec{w}</script></li>
-</ul>
-<h3 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h3><ul>
-<li>二维数组</li>
-<li>在图形学中被广泛(pervasively)用于表示<strong>变换</strong><ul>
-<li>移动、旋转、缩放、错切······</li>
-</ul>
-</li>
-</ul>
-<h4 id="什么是矩阵"><a href="#什么是矩阵" class="headerlink" title="什么是矩阵"></a>什么是矩阵</h4><ul>
-<li>数字构成的数组(m x n = m行n列)</li>
-<li>加法与数乘只需要按元素进行</li>
-</ul>
-<h4 id="矩阵-矩阵乘积"><a href="#矩阵-矩阵乘积" class="headerlink" title="矩阵-矩阵乘积"></a>矩阵-矩阵乘积</h4><ul>
-<li><p>要求：$A\times B$ 要求 $A$ 的列数= $B$ 的行数</p>
-<p>  $(M\times N)(N\times P) = (M\times P)$</p>
-</li>
-<li><p>结果矩阵中的每一个元素 $(i, j)$ 等于 $A$ 矩阵的第 $i$ 行与 $B$ 矩阵的第 $j$ 列的点乘</p>
-</li>
-<li><p>性质</p>
-<ul>
-<li><p>不满足交换律</p>
-<p>  (AB和BA一般不同)</p>
-</li>
-<li><p>满足结合律和分配律</p>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="矩阵-向量乘积"><a href="#矩阵-向量乘积" class="headerlink" title="矩阵-向量乘积"></a>矩阵-向量乘积</h4><ul>
-<li>假定向量是列向量(m x 1)</li>
-<li>空间点变换的关键</li>
-</ul>
-<h4 id="矩阵转置"><a href="#矩阵转置" class="headerlink" title="矩阵转置"></a>矩阵转置</h4><ul>
-<li><p>将行和列互换</p>
-</li>
-<li><p>性质</p>
-<script type="math/tex; mode=display">
-  (AB)^T = B^TA^T</script></li>
-</ul>
-<h4 id="单位矩阵和矩阵的逆"><a href="#单位矩阵和矩阵的逆" class="headerlink" title="单位矩阵和矩阵的逆"></a>单位矩阵和矩阵的逆</h4><script type="math/tex; mode=display">
-I_{n\times n} = 
-\begin{pmatrix}
-1 & 0 & \cdots & 0\\ 
-0 & 0 & \cdots & 0\\
-\vdots & \vdots & \ddots & \vdots\\
-0 & 0 & \cdots & 1
-\end{pmatrix}_{n\times n}</script><script type="math/tex; mode=display">
-AA^{-1} = A^{-1}A = I</script><script type="math/tex; mode=display">
-(AB)^{-1} = B^{-1}A^{-1}</script><h4 id="矩阵形式的向量乘法"><a href="#矩阵形式的向量乘法" class="headerlink" title="矩阵形式的向量乘法"></a>矩阵形式的向量乘法</h4><ul>
-<li><p>点乘</p>
-<script type="math/tex; mode=display">
-  \begin{align}
-  \vec{a}\cdot\vec{b}
-  &=& \vec{a}^T\vec{b}\notag\\
-  &=& \begin{pmatrix}x_a & y_a & z_a\end{pmatrix}
-  \begin{pmatrix}x_a \\ y_a \\ z_a\end{pmatrix}\notag\\
-  &=&(x_ax_b + y_ay_b + z_az_b)
-  \end{align}</script></li>
-<li><p>叉乘</p>
-<script type="math/tex; mode=display">
-  \vec{a}\times\vec{b} = A^*b = 
-  \underbrace{\begin{pmatrix}
-  0 & -z_a & y_a \\
-  z_a & 0 & -x_a \\
-  -y_a & x_a & 0
-  \end{pmatrix}}_\text{向量a的伴随矩阵(dual matrix)}
-  \begin{pmatrix}x_b \\ y_b \\ z_b\end{pmatrix}</script></li>
-</ul>
-
+A(S) = \iint\limits_D\sqrt{1 + f_x^2 + f_y^2}dA.
+\tag{6.7}\label{函数图像的面积}</script>
       
 
       
@@ -478,21 +274,6 @@ AA^{-1} = A^{-1}A = I</script><script type="math/tex; mode=display">
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">计算机科学</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">GAMES101</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -506,18 +287,9 @@ AA^{-1} = A^{-1}A = I</script><script type="math/tex; mode=display">
   
 <nav id="article-nav">
   
-    <a href="/2024/05/02/GAMES101/Lecture03-%E5%8F%98%E6%8D%A2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          GAMES101笔记：Lecture03-变换
-        
-      </div>
-    </a>
   
-  
-    <a href="/2024/05/02/GAMES101/Lecture01-%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6%E6%A6%82%E8%A7%88/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">GAMES101笔记：Lecture01-计算机图形学概览</div>
+    <a href="/2024/06/12/Calculus/Calculus%E7%AC%94%E8%AE%B0-16-5-%E6%97%8B%E5%BA%A6%E4%B8%8E%E6%95%A3%E5%BA%A6/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Calculus笔记-16.5-旋度与散度</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -544,7 +316,7 @@ AA^{-1} = A^{-1}A = I</script><script type="math/tex; mode=display">
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#GAMES101%E7%AC%94%E8%AE%B0%EF%BC%9ALecture02-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E5%A4%8D%E4%B9%A0"><span class="toc-number">1.</span> <span class="toc-text">GAMES101笔记：Lecture02 线性代数复习</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E5%BD%A2%E5%AD%A6%E7%9A%84%E4%BE%9D%E8%B5%96%E7%9F%A5%E8%AF%86"><span class="toc-number">1.1.</span> <span class="toc-text">图形学的依赖知识</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%AC%E8%AF%BE%E7%A8%8B%E5%86%85%E5%AE%B9"><span class="toc-number">1.1.1.</span> <span class="toc-text">本课程内容</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B"><span class="toc-number">1.2.</span> <span class="toc-text">示例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%91%E9%87%8F"><span class="toc-number">1.3.</span> <span class="toc-text">向量</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E6%AD%A3%E5%88%99%E5%8C%96"><span class="toc-number">1.3.1.</span> <span class="toc-text">向量正则化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E6%B1%82%E5%92%8C"><span class="toc-number">1.3.2.</span> <span class="toc-text">向量求和</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%9B%E5%8D%A1%E5%B0%94%E5%9D%90%E6%A0%87%E7%B3%BB"><span class="toc-number">1.3.3.</span> <span class="toc-text">笛卡尔坐标系</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E4%B9%98%E6%B3%95"><span class="toc-number">1.3.4.</span> <span class="toc-text">向量乘法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%82%B9%EF%BC%88%E6%95%B0%EF%BC%89%E4%B9%98"><span class="toc-number">1.3.4.1.</span> <span class="toc-text">点（数）乘</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E7%AC%9B%E5%8D%A1%E5%B0%94%E5%9D%90%E6%A0%87%E7%B3%BB%E4%B8%AD%E7%9A%84%E7%82%B9%E4%B9%98"><span class="toc-number">1.3.4.1.1.</span> <span class="toc-text">笛卡尔坐标系中的点乘</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%9B%BE%E5%BD%A2%E5%AD%A6%E4%B8%AD%E7%9A%84%E7%82%B9%E4%B9%98"><span class="toc-number">1.3.4.1.2.</span> <span class="toc-text">图形学中的点乘</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%8A%95%E5%BD%B1%E4%B8%8E%E7%82%B9%E4%B9%98"><span class="toc-number">1.3.4.1.3.</span> <span class="toc-text">投影与点乘</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%AF%BB%E6%89%BE%E6%8A%95%E5%BD%B1%E7%9A%84%E5%A5%BD%E5%A4%84"><span class="toc-number">1.3.4.1.4.</span> <span class="toc-text">寻找投影的好处</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E7%9A%84%E5%8F%89%E4%B9%98"><span class="toc-number">1.3.4.2.</span> <span class="toc-text">向量的叉乘</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E5%8F%89%E4%B9%98%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="toc-number">1.3.4.2.1.</span> <span class="toc-text">向量叉乘的性质</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E5%8F%89%E4%B9%98%E7%9A%84%E5%9D%90%E6%A0%87%E7%B3%BB%E6%B3%95%E5%88%99"><span class="toc-number">1.3.4.2.2.</span> <span class="toc-text">向量叉乘的坐标系法则</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%8F%89%E4%B9%98%E5%9C%A8%E5%9B%BE%E5%BD%A2%E5%AD%A6%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-number">1.3.4.2.3.</span> <span class="toc-text">叉乘在图形学中的应用</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%AD%A3%E4%BA%A4%E5%9F%BA-%E5%9D%90%E6%A0%87%E7%B3%BB"><span class="toc-number">1.3.4.3.</span> <span class="toc-text">正交基&#x2F;坐标系</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%AD%A3%E4%BA%A4%E5%9F%BA%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">1.3.4.3.1.</span> <span class="toc-text">正交基的定义</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9F%A9%E9%98%B5"><span class="toc-number">1.4.</span> <span class="toc-text">矩阵</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E7%9F%A9%E9%98%B5"><span class="toc-number">1.4.1.</span> <span class="toc-text">什么是矩阵</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9F%A9%E9%98%B5-%E7%9F%A9%E9%98%B5%E4%B9%98%E7%A7%AF"><span class="toc-number">1.4.2.</span> <span class="toc-text">矩阵-矩阵乘积</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9F%A9%E9%98%B5-%E5%90%91%E9%87%8F%E4%B9%98%E7%A7%AF"><span class="toc-number">1.4.3.</span> <span class="toc-text">矩阵-向量乘积</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9F%A9%E9%98%B5%E8%BD%AC%E7%BD%AE"><span class="toc-number">1.4.4.</span> <span class="toc-text">矩阵转置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%95%E4%BD%8D%E7%9F%A9%E9%98%B5%E5%92%8C%E7%9F%A9%E9%98%B5%E7%9A%84%E9%80%86"><span class="toc-number">1.4.5.</span> <span class="toc-text">单位矩阵和矩阵的逆</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9F%A9%E9%98%B5%E5%BD%A2%E5%BC%8F%E7%9A%84%E5%90%91%E9%87%8F%E4%B9%98%E6%B3%95"><span class="toc-number">1.4.6.</span> <span class="toc-text">矩阵形式的向量乘法</span></a></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Calculus%E7%AC%94%E8%AE%B0-16-6-%E5%8F%82%E6%95%B0%E6%9B%B2%E9%9D%A2%E5%8F%8A%E9%9D%A2%E7%A7%AF"><span class="toc-number">1.</span> <span class="toc-text">Calculus笔记-16.6-参数曲面及面积</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%82%E6%95%B0%E6%9B%B2%E9%9D%A2"><span class="toc-number">1.1.</span> <span class="toc-text">参数曲面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BD%91%E6%A0%BC%E7%BA%BF-grid-curves"><span class="toc-number">1.2.</span> <span class="toc-text">网格线(grid curves)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%8B%E8%BD%AC%E6%9B%B2%E9%9D%A2"><span class="toc-number">1.3.</span> <span class="toc-text">旋转曲面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%87%E5%B9%B3%E9%9D%A2-Tangent-Planes"><span class="toc-number">1.4.</span> <span class="toc-text">切平面(Tangent Planes)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9B%B2%E9%9D%A2%E9%9D%A2%E7%A7%AF"><span class="toc-number">1.5.</span> <span class="toc-text">曲面面积</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89"><span class="toc-number">1.5.1.</span> <span class="toc-text">定义</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E5%9B%BE%E5%83%8F%E7%9A%84%E9%9D%A2%E7%A7%AF"><span class="toc-number">1.6.</span> <span class="toc-text">函数图像的面积</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
