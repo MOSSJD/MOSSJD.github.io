@@ -22,7 +22,7 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405070930354.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405070956625.png">
 <meta property="article:published_time" content="2024-05-06T15:22:14.000Z">
-<meta property="article:modified_time" content="2024-05-17T03:07:59.298Z">
+<meta property="article:modified_time" content="2024-06-23T13:03:36.020Z">
 <meta property="article:author" content="MOSSJD">
 <meta property="article:tag" content="数学">
 <meta property="article:tag" content="Calculus">
@@ -194,117 +194,96 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="Calculus笔记-15-9-多重积分的换元法"><a href="#Calculus笔记-15-9-多重积分的换元法" class="headerlink" title="Calculus笔记-15.9-多重积分的换元法"></a>Calculus笔记-15.9-多重积分的换元法</h3><span id="more"></span>
-<h4 id="二重积分的换元法"><a href="#二重积分的换元法" class="headerlink" title="二重积分的换元法"></a>二重积分的换元法</h4><ul>
-<li><p>考虑由从 $uv$ 平面到 $xy$ 平面的<strong>变换(transformation)</strong> $T$ 给出的变换：</p>
+<h4 id="二重积分的换元法"><a href="#二重积分的换元法" class="headerlink" title="二重积分的换元法"></a>二重积分的换元法</h4><h5 id="引入"><a href="#引入" class="headerlink" title="引入"></a>引入</h5><p>考虑由从 $uv$ 平面到 $xy$ 平面的<strong>变换(transformation)</strong> $T$ 给出的变换：</p>
 <script type="math/tex; mode=display">
-  T(u, v) = (x, y)</script><p>  其中 $x$ 、 $y$ 和 $u$ 、 $v$ 的关系由</p>
+T(u, v) = (x, y)</script><p>其中 $x$ 、 $y$ 和 $u$ 、 $v$ 的关系由</p>
 <script type="math/tex; mode=display">
-  x = g(u, v)\qquad y = h(u, v)
-  \tag{9.1}\label{xyuv}</script><p>  或</p>
+x = g(u, v)\qquad y = h(u, v)
+\tag{9.1}\label{xyuv}</script><p>或</p>
 <script type="math/tex; mode=display">
-  x = x(u, v)\qquad y = y(u, v)</script><p>  确定。通常假设 $T$ 是一个 $\mathbf{C^1}$ <strong>变换(transformation)</strong>，即 $g$ 和 $h$ 都有一阶导数。</p>
+x = x(u, v)\qquad y = y(u, v)</script><p>确定。通常假设 $T$ 是一个 $\mathbf{C^1}$ <strong>变换(transformation)</strong>，即 $g$ 和 $h$ 都有一阶导数。</p>
 <ul>
-<li><p>当变换 $T$ 的定义域和值域都为 $\mathbb{R}^2$ 时，它是一个函数。</p>
-</li>
-<li><p>当 $T(u_1, v_1) = (x_1, y_1)$ 时，点 $(x_1, y_1)$ 被称为点 $(u_1, v_1)$ 的<strong>图像(image)</strong>。</p>
-</li>
-<li><p>当没有两个点的图像相同时， $T$ 是一个<strong>一一对应(one-to-one)</strong>的变换。</p>
-</li>
-<li><p>下图说明了变换 $T$ 对 $uv$ 平面上的区域 $S$ 的作用。</p>
-<p>  <img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405070006890.png" alt=""></p>
-<p>   $T$ 将 $S$ 变换为 $xy$ 平面上的区域 $R$ ，这个区域被称为 $\mathbf{S}$ <strong>的图像</strong>(the <strong>image of</strong> $\mathbf{S}$ )，包括了 $S$ 上所有点的图像。</p>
-</li>
-<li><p>如果 $T$ 是一个一一对应的变换，则它有从 $xy$ 平面到 $uv$ 平面的<strong>逆变换(inverse transformation)</strong> $T^{-1}$ ，并可以利用它来解出式 $\eqref{xyuv}$ ，从而用 $x$ 和 $y$ 来表示 $u$ 和 $v$ ：</p>
-<script type="math/tex; mode=display">
-  u = G(x, y)\qquad v = H(x, y)</script></li>
+<li>当变换 $T$ 的定义域和值域都为 $\mathbb{R}^2$ 时，它是一个函数。</li>
+<li>当 $T(u_1, v_1) = (x_1, y_1)$ 时，点 $(x_1, y_1)$ 被称为点 $(u_1, v_1)$ 的<strong>图像(image)</strong>。</li>
+<li>当没有两个点的图像相同时， $T$ 是一个<strong>一一对应(one-to-one)</strong>的变换。</li>
 </ul>
-</li>
-<li><p>观察变量的变换是如何影响二重积分的。从一个在 $uv$ 平面内，左下角为 $(u_0, v_0)$ ，边长分别为 $\Delta u$ 和 $\Delta v$ 的矩形 $S$ 开始（如下图）：</p>
-<p>  <img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405070834914.png" alt=""></p>
-<p>   $S$ 的图像是一块在 $xy$ 平面内的区域 $R$ ，它的一个边界点是 $(x_0, y_0) = T(u_0, v_0)$ 。向量</p>
+<p>下图说明了变换 $T$ 对 $uv$ 平面上的区域 $S$ 的作用。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405070006890.png" alt=""></p>
+<p> $T$ 将 $S$ 变换为 $xy$ 平面上的区域 $R$ ，这个区域被称为 $\mathbf{S}$ <strong>的图像</strong>(the <strong>image of</strong> $\mathbf{S}$ )，包括了 $S$ 上所有点的图像。</p>
+<p>如果 $T$ 是一个一一对应的变换，则它有从 $xy$ 平面到 $uv$ 平面的<strong>逆变换(inverse transformation)</strong> $T^{-1}$ ，并可以利用它来解出式 $\eqref{xyuv}$ ，从而用 $x$ 和 $y$ 来表示 $u$ 和 $v$ ：</p>
 <script type="math/tex; mode=display">
-  \mathbf{r}(u, v) = 
-  g(u, v)\mathbf{i} + h(u, v)\mathbf{j}</script><p>  是点 $(u, v)$ 图像的位置矢量。</p>
-<ul>
-<li><p>$S$ 靠下一侧的方程是 $v = v_0$ ，它的图像曲线由向量值函数 $\mathbf{r}(u, v_0)$ 确定。这条图像曲线在 $(x_0, y_0)$ 的切向量为：</p>
+u = G(x, y)\qquad v = H(x, y)</script><p>观察变量的变换是如何影响二重积分的。从一个在 $uv$ 平面内，左下角为 $(u_0, v_0)$ ，边长分别为 $\Delta u$ 和 $\Delta v$ 的矩形 $S$ 开始（如下图）：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405070834914.png" alt=""></p>
+<p> $S$ 的图像是一块在 $xy$ 平面内的区域 $R$ ，它的一个边界点是 $(x_0, y_0) = T(u_0, v_0)$ 。向量</p>
 <script type="math/tex; mode=display">
- \mathbf{r}_u = 
- g_u(u_0, v_0)\mathbf{i} + 
- h_u(u_0, v_0)\mathbf{j} = 
- \frac{\partial x}{\partial u}\mathbf{i} + 
- \frac{\partial y}{\partial u}\mathbf{j}</script></li>
-<li><p>相似地， $S$ 左侧的图像曲线（即 $u = u_0$ ）在 $(x_0, y_0)$ 的切线为</p>
+\mathbf{r}(u, v) = 
+g(u, v)\mathbf{i} + h(u, v)\mathbf{j}</script><p>是点 $(u, v)$ 图像的位置矢量。</p>
+<p>$S$ 靠下一侧的方程是 $v = v_0$ ，它的图像曲线由向量值函数 $\mathbf{r}(u, v_0)$ 确定。这条图像曲线在 $(x_0, y_0)$ 的切向量为：</p>
 <script type="math/tex; mode=display">
-  \mathbf{r}_v = 
-  g_v(u_0, v_0)\mathbf{i} + 
-  h_v(u_0, v_0)\mathbf{j} = 
-  \frac{\partial x}{\partial v}\mathbf{i} + 
-  \frac{\partial y}{\partial v}\mathbf{j}</script></li>
-<li><p>我们可以用由割向量</p>
+\mathbf{r}_u = 
+g_u(u_0, v_0)\mathbf{i} + 
+h_u(u_0, v_0)\mathbf{j} = 
+\frac{\partial x}{\partial u}\mathbf{i} + 
+\frac{\partial y}{\partial u}\mathbf{j}</script><p>相似地， $S$ 左侧的图像曲线（即 $u = u_0$ ）在 $(x_0, y_0)$ 的切线为</p>
 <script type="math/tex; mode=display">
-  \mathbf a = 
-  \mathbf r(u_0 + \Delta u, v_0) - 
-  \mathbf r(u_0, v_0)\qquad
-  \mathbf b = 
-  \mathbf r(u_0, v_0 + \Delta v) - 
-  \mathbf r(u_0, v_0)</script><p>  来近似区域 $R  = T(S)$ 的图像，如下图所示：</p>
-<p>  <img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405070858096.png" alt=""></p>
-<ul>
-<li><p>因为</p>
+\mathbf{r}_v = 
+g_v(u_0, v_0)\mathbf{i} + 
+h_v(u_0, v_0)\mathbf{j} = 
+\frac{\partial x}{\partial v}\mathbf{i} + 
+\frac{\partial y}{\partial v}\mathbf{j}</script><p>我们可以用由割向量</p>
 <script type="math/tex; mode=display">
-  \mathbf r_u = \lim_{\Delta u\to 0}
-  \frac{
-  \mathbf r(u_0 + \Delta u, v_0) - 
-  \mathbf r(u_0, v_0)
-  }
-  {\Delta u}</script><p>  所以</p>
+\mathbf a = 
+\mathbf r(u_0 + \Delta u, v_0) - 
+\mathbf r(u_0, v_0)\qquad
+\mathbf b = 
+\mathbf r(u_0, v_0 + \Delta v) - 
+\mathbf r(u_0, v_0)</script><p>来近似区域 $R  = T(S)$ 的图像，如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405070858096.png" alt=""></p>
+<p>因为</p>
 <script type="math/tex; mode=display">
-  \mathbf r(u_0 + \Delta u, v_0) - 
-  \mathbf r(u_0, v_0)\approx
-  \Delta u\mathbf r_u</script></li>
-<li><p>相似地，</p>
+\mathbf r_u = \lim_{\Delta u\to 0}
+\frac{
+\mathbf r(u_0 + \Delta u, v_0) - 
+\mathbf r(u_0, v_0)
+}
+{\Delta u}</script><p>所以</p>
 <script type="math/tex; mode=display">
-  \mathbf r(u_0, v_0 + \Delta v) - 
-  \mathbf r(u_0, v_0)\approx
-  \Delta v\mathbf r_v</script></li>
-</ul>
-</li>
-<li><p>这意味着我们可以用向量 $\Delta u\mathbf r_u$ 和 $\Delta v\mathbf r_v$ 所确定的平行四边形来近似 $R$ （如下图）：</p>
-<p>  <img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405070905214.png" alt=""></p>
-</li>
-<li><p>则我们可以用平行四边形的面积来近似 $R$ 的面积：</p>
+\mathbf r(u_0 + \Delta u, v_0) - 
+\mathbf r(u_0, v_0)\approx
+\Delta u\mathbf r_u</script><p>相似地，</p>
 <script type="math/tex; mode=display">
-  |(\Delta u\mathbf r_u)\times
-  (\Delta v\mathbf r_v)| = 
-  |\mathbf r_u\times\mathbf r_v|
-  \Delta u\Delta v
-  \tag{6.2}\label{近似面积1}</script></li>
-<li><p>将叉乘展开，我们得到：</p>
+\mathbf r(u_0, v_0 + \Delta v) - 
+\mathbf r(u_0, v_0)\approx
+\Delta v\mathbf r_v</script><p>这意味着我们可以用向量 $\Delta u\mathbf r_u$ 和 $\Delta v\mathbf r_v$ 所确定的平行四边形来近似 $R$ （如下图）：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405070905214.png" alt=""></p>
+<p>则我们可以用平行四边形的面积来近似 $R$ 的面积：</p>
 <script type="math/tex; mode=display">
-  \mathbf r_u\times\mathbf r_v = 
-  \begin{vmatrix}
-  \mathbf i & \mathbf j & \mathbf k \\
-  \frac{\partial x}{\partial u} & 
-  \frac{\partial y}{\partial u} & 0 \\
-  \frac{\partial x}{\partial v} & 
-  \frac{\partial y}{\partial v} & 0 \\
-  \end{vmatrix} = 
-  \begin{vmatrix}
-  \frac{\partial x}{\partial u} & 
-  \frac{\partial y}{\partial u}\\
-  \frac{\partial x}{\partial v} & 
-  \frac{\partial y}{\partial v}\\
-  \end{vmatrix}\mathbf k = 
-  \begin{vmatrix}
-  \frac{\partial x}{\partial u} & 
-  \frac{\partial x}{\partial v}\\
-  \frac{\partial y}{\partial u}& 
-  \frac{\partial y}{\partial v}\\
-  \end{vmatrix}\mathbf k</script><p>  结果中的行列式被叫做这个变换的<strong>雅各比式(Jacobian)</strong>，由一个特定的符号来表示：</p>
-</li>
-</ul>
-</li>
-</ul>
+|(\Delta u\mathbf r_u)\times
+(\Delta v\mathbf r_v)| = 
+|\mathbf r_u\times\mathbf r_v|
+\Delta u\Delta v
+\tag{6.2}\label{近似面积1}</script><p>将叉乘展开，我们得到：</p>
+<script type="math/tex; mode=display">
+\mathbf r_u\times\mathbf r_v = 
+\begin{vmatrix}
+\mathbf i & \mathbf j & \mathbf k \\
+\frac{\partial x}{\partial u} & 
+\frac{\partial y}{\partial u} & 0 \\
+\frac{\partial x}{\partial v} & 
+\frac{\partial y}{\partial v} & 0 \\
+\end{vmatrix} = 
+\begin{vmatrix}
+\frac{\partial x}{\partial u} & 
+\frac{\partial y}{\partial u}\\
+\frac{\partial x}{\partial v} & 
+\frac{\partial y}{\partial v}\\
+\end{vmatrix}\mathbf k = 
+\begin{vmatrix}
+\frac{\partial x}{\partial u} & 
+\frac{\partial x}{\partial v}\\
+\frac{\partial y}{\partial u}& 
+\frac{\partial y}{\partial v}\\
+\end{vmatrix}\mathbf k</script><p>结果中的行列式被叫做这个变换的<strong>雅各比式(Jacobian)</strong>，由一个特定的符号来表示。</p>
 <h5 id="雅各比式的定义"><a href="#雅各比式的定义" class="headerlink" title="雅各比式的定义"></a>雅各比式的定义</h5><p>由 $x = g(u, v)$ 和 $y = h(u, v)$ 确定的变换 $T$ 的<strong>雅各比式</strong>为：</p>
 <script type="math/tex; mode=display">
 \frac{\partial(x, y)}{\partial(u, v)} =
@@ -325,36 +304,32 @@
 \frac{\partial(x, y)}{\partial(u, v)}
 \right|\Delta u\Delta v
 \tag{6.4}\label{近似面积2}</script><p>其中雅各比式的值在 $(u_0, v_0)$ 求得。</p>
-<ul>
-<li><p>下一步，我们将 $uv$ 平面中的区域 $S$ 分割成矩形 $S_{ij}$ ，将它们在 $xy$ 平面中的图像设为 $R_{ij}$ （如下图）：</p>
-<p>  <img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405070930354.png" alt=""></p>
-</li>
-<li><p>将近似面积 $\eqref{近似面积2}$ 代入每一个 $R_{ij}$ ，我们可以近似求得 $f$ 对 $R$ 的二重积分：</p>
+<h5 id="用雅各比式来计算二重积分"><a href="#用雅各比式来计算二重积分" class="headerlink" title="用雅各比式来计算二重积分"></a>用雅各比式来计算二重积分</h5><p>下一步，我们将 $uv$ 平面中的区域 $S$ 分割成矩形 $S_{ij}$ ，将它们在 $xy$ 平面中的图像设为 $R_{ij}$ （如下图）：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405070930354.png" alt=""></p>
+<p>将近似面积 $\eqref{近似面积2}$ 代入每一个 $R_{ij}$ ，我们可以近似求得 $f$ 对 $R$ 的二重积分：</p>
 <script type="math/tex; mode=display">
-  \begin{align}
-  \iint\limits_Rf(x, y)dA &\approx 
-  \sum_{i = 1}^m\sum_{j = 1}^n
-  f(x_i, y_j)\Delta A \\&\approx 
-  \sum_{i = 1}^m\sum_{j = 1}^n
-  f(g(u_i, v_j), h(u_i, v_j))
-  \left|
-  \frac{\partial(x, y)}{\partial(u, v)}
-  \right|\Delta u\Delta v
-  \end{align}</script><p>  其中雅各比式的值在 $(u_i, v_j)$ 求得。</p>
-</li>
-<li><p>注意到这个和即为二重积分</p>
+\begin{align}
+\iint\limits_Rf(x, y)dA &\approx 
+\sum_{i = 1}^m\sum_{j = 1}^n
+f(x_i, y_j)\Delta A \\&\approx 
+\sum_{i = 1}^m\sum_{j = 1}^n
+f(g(u_i, v_j), h(u_i, v_j))
+\left|
+\frac{\partial(x, y)}{\partial(u, v)}
+\right|\Delta u\Delta v
+\end{align}</script><p>其中雅各比式的值在 $(u_i, v_j)$ 求得。</p>
+<p>注意到这个和即为二重积分</p>
 <script type="math/tex; mode=display">
-  \iint\limits_R
-  f(g(u, v), h(u, v))
-  \left|
-  \frac{\partial(x, y)}{\partial(u, v)}
-  \right|\ du\ dv</script><p>  的黎曼和。</p>
-</li>
-<li><p>上述论证表明以下定理是正确的（严谨证明需要用到高级微积分的知识）：</p>
-</li>
-</ul>
-<h5 id="定理：二重积分的换元法"><a href="#定理：二重积分的换元法" class="headerlink" title="定理：二重积分的换元法"></a>定理：二重积分的换元法</h5><p>设 $T$ 是雅各比式非零的 $C^1$ 变换，且 $T$ 将 $uv$ 平面中的区域 $S$ 映射到 $xy$ 平面中的区域 $R$ 。设 $f$ 在 $R$ 上连续，且 $R$ 和 $S$ 为第一类或第二类二重积分区域。设 $T$ 是除了在 $S$ 的边界上外都是一一对应的变换，则</p>
-<script type="math/tex; mode=display">
+\iint\limits_R
+f(g(u, v), h(u, v))
+\left|
+\frac{\partial(x, y)}{\partial(u, v)}
+\right|\ du\ dv</script><p>的黎曼和。</p>
+<p>上述论证表明以下定理是正确的（严谨证明需要用到高级微积分的知识）：</p>
+<h5 id="二重积分换元定理"><a href="#二重积分换元定理" class="headerlink" title="二重积分换元定理"></a>二重积分换元定理</h5><script type="math/tex; mode=display">
+\text{设 $T$ 是雅各比式非零的 $C^1$ 变换，且 $T$ 将 $uv$ 平面中的区域 $S$ 映射到 $xy$ 平面中的区域 $R$ 。}\\
+\text{设 $f$ 在 $R$ 上连续，且 $R$ 和 $S$ 为第一类或第二类二重积分区域。}\\
+\text{设 $T$ 是除了在 $S$ 的边界上外都是一一对应的变换，则 }\\
 \iint\limits_Rf(x, y)dA = 
 \iint\limits_R
 f(x(u, v), y(u, v))
@@ -367,77 +342,96 @@ dA =
 \left|
 \frac{\partial(x, y)}{\partial(u, v)}
 \right|\ du\ dv</script><p>来将对 $x$ 和 $y$ 的积分变换成对 $u$ 和 $v$ 的积分。</p>
-<ul>
-<li><p>以极坐标为例子来说明定理 $\eqref{二重积分换元法}$ 的用法：</p>
-<ul>
-<li><p>在极坐标中，从 $r\theta$ 平面到 $xy$ 平面的变换 $T$ 为：</p>
+<h5 id="极坐标的二重积分公式"><a href="#极坐标的二重积分公式" class="headerlink" title="极坐标的二重积分公式"></a>极坐标的二重积分公式</h5><p>以极坐标为例子来说明定理 $\eqref{二重积分换元法}$ 的用法：</p>
+<p>在极坐标中，从 $r\theta$ 平面到 $xy$ 平面的变换 $T$ 为：</p>
 <script type="math/tex; mode=display">
-  x = g(r, \theta) = r\cos\theta \qquad
-  y = h(r, \theta) = r\sin\theta</script><p>  变换的几何含义如下图所示：</p>
-<p>  <img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405070956625.png" alt=""></p>
-<p>   $T$ 将 $r\theta$ 平面中的一般矩形映射到 $xy$ 平面中的极矩形。</p>
-</li>
-<li><p>$T$ 的雅各比式为：</p>
+x = g(r, \theta) = r\cos\theta \qquad
+y = h(r, \theta) = r\sin\theta</script><p>变换的几何含义如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405070956625.png" alt=""></p>
+<p> $T$ 将 $r\theta$ 平面中的一般矩形映射到 $xy$ 平面中的极矩形。</p>
+<p>$T$ 的雅各比式为：</p>
 <script type="math/tex; mode=display">
- \frac{\partial(x, y)}
- {\partial(r, \theta)} =
- \begin{vmatrix}
- \frac{\partial x}{\partial r} & 
- \frac{\partial x}{\partial \theta}\\
- \frac{\partial y}{\partial r}& 
- \frac{\partial y}{\partial \theta}\\
- \end{vmatrix} =
- \begin{vmatrix}
- \cos\theta & - r\sin\theta\\
- \sin\theta& r\cos\theta\\
- \end{vmatrix} = 
- r\cos^2\theta + r\sin^2\theta = r > 0</script></li>
-<li><p>代入 $\eqref{二重积分换元法}$ 得：</p>
+\frac{\partial(x, y)}
+{\partial(r, \theta)} =
+\begin{vmatrix}
+\frac{\partial x}{\partial r} & 
+\frac{\partial x}{\partial \theta}\\
+\frac{\partial y}{\partial r}& 
+\frac{\partial y}{\partial \theta}\\
+\end{vmatrix} =
+\begin{vmatrix}
+\cos\theta & - r\sin\theta\\
+\sin\theta& r\cos\theta\\
+\end{vmatrix} = 
+r\cos^2\theta + r\sin^2\theta = r > 0</script><p>代入 $\eqref{二重积分换元法}$ 得：</p>
 <script type="math/tex; mode=display">
-  \begin{align}
-  \iint\limits_Rf(x, y)\ dx\ dy &= 
-  \iint\limits_R
-  f(r\cos\theta, r\sin\theta)
-  \left|
-  \frac{\partial(x, y)}{\partial(r, \theta)}
-  \right|\ dr\ d\theta \\&=
-  \int_\alpha^\beta\int_a^b
-  f(r\cos\theta, r\sin\theta)r\ dr\ d\theta
-  \end{align}</script><p>  即极坐标的二重积分公式。</p>
-</li>
+\iint\limits_Rf(x, y)\ dx\ dy = 
+\int_\alpha^\beta\int_a^b
+f(r\cos\theta, r\sin\theta)r\ dr\ d\theta
+\tag{6.6}\label{极坐标的二重积分公式}</script><p>即极坐标的二重积分公式。</p>
+<h4 id="三重积分换元法"><a href="#三重积分换元法" class="headerlink" title="三重积分换元法"></a>三重积分换元法</h4><p>利用和 $\eqref{二重积分换元法}$ 类似的假设，我们可以得到如下关于三重积分的公式：</p>
+<h5 id="三重积分换元定理"><a href="#三重积分换元定理" class="headerlink" title="三重积分换元定理"></a>三重积分换元定理</h5><script type="math/tex; mode=display">
+\text{设 $T$ 为将 $uvw$ 平面中的区域 $S$ 映射到 $xyz$ 平面中的区域 $R$ 的变换，其关系为：}\\
+x = g(u,v,w)\qquad
+y = h(u,v,w)\qquad
+z = k(u,v,w)\\
+\text{则}\\
+\iiint\limits_Rf(x, y, z)dV = 
+\iiint\limits_R
+f(x(u, v, w), y(u, v, w), z(u, v, w))
+\left|
+\frac{\partial(x, y, z)}{\partial(u, v, w)}
+\right|\ du\ dv\ dw\\
+\text{其中}\\
+\frac{\partial(x, y, z)}{\partial(u, v, w)} =
+\begin{vmatrix}
+\frac{\partial x}{\partial u} & 
+\frac{\partial x}{\partial v} &
+\frac{\partial x}{\partial w}\\
+\frac{\partial y}{\partial u} & 
+\frac{\partial y}{\partial v} &
+\frac{\partial y}{\partial w}\\
+\frac{\partial z}{\partial u} & 
+\frac{\partial z}{\partial v} &
+\frac{\partial z}{\partial w}
+\end{vmatrix}.
+\tag{6.7}\label{三重积分换元法}</script><h5 id="球坐标的三重积分公式"><a href="#球坐标的三重积分公式" class="headerlink" title="球坐标的三重积分公式"></a>球坐标的三重积分公式</h5><ul>
+<li>我们使用球坐标</li>
 </ul>
-</li>
-</ul>
-<h4 id="三重积分换元法"><a href="#三重积分换元法" class="headerlink" title="三重积分换元法"></a>三重积分换元法</h4><ul>
-<li><p>设 $T$ 为将 $uvw$ 平面中的区域 $S$ 映射到 $xyz$ 平面中的区域 $R$ 的变换，其关系为：</p>
 <script type="math/tex; mode=display">
-  x = g(u,v,w)\qquad
-  y = h(u,v,w)\qquad
-  z = k(u,v,w)</script></li>
-<li><p>$T$ 的雅各比式即为行列式：</p>
+x = r\sin\phi\cos\theta\qquad y = r\sin\phi\sin\theta\qquad z = r\cos\phi
+\tag{6.8}\label{球坐标}</script><p>来表示和三维中的球面有关的坐标时十分便捷。</p>
+<p>若我们将 $r$ ,  $\phi$ 和 $\theta$ 看作变量，则式 $\eqref{球坐标}$ 可以看作从 $r\phi\theta$ 空间到 $xyz$ 空间的一个变换。因此我们可以运用三重积分的换元法来将对 $xyz$ 的三重积分转换为对 $r\phi\theta$ 的三重积分。</p>
+<p>计算雅各比式：</p>
 <script type="math/tex; mode=display">
- \frac{\partial(x, y, z)}{\partial(u, v, w)} =
- \begin{vmatrix}
- \frac{\partial x}{\partial u} & 
- \frac{\partial x}{\partial v} &
- \frac{\partial x}{\partial w}\\
- \frac{\partial y}{\partial u} & 
- \frac{\partial y}{\partial v} &
- \frac{\partial y}{\partial w}\\
- \frac{\partial z}{\partial u} & 
- \frac{\partial z}{\partial v} &
- \frac{\partial z}{\partial w}
- \end{vmatrix}</script></li>
-<li><p>利用和 $\eqref{二重积分换元法}$ 类似的假设，我们可以得到如下关于三重积分的公式：</p>
+\begin{align}
+\frac{\partial(x, y, z)}{\partial(u, v, w)} &= 
+\begin{vmatrix}
+\frac{\partial x}{\partial r} & \frac{\partial x}{\partial\rho} & \frac{\partial x}{\partial\theta}\\
+\frac{\partial y}{\partial r} & \frac{\partial y}{\partial\rho} & \frac{\partial y}{\partial\theta}\\
+\frac{\partial z}{\partial r} & \frac{\partial z}{\partial\rho} & \frac{\partial z}{\partial\theta}\\
+\end{vmatrix} \\&=
+\begin{vmatrix}
+\sin\phi\cos\theta & r\cos\phi\cos\theta & -r\sin\phi\sin\theta\\
+\sin\phi\sin\theta & r\cos\phi\sin\theta & r\sin\phi\cos\theta\\
+\cos\phi & -r\sin\phi & 0
+\end{vmatrix} \\&=
+\cos\phi
+\left(
+r\sin\phi\cos\theta\cos\phi\sin\theta - r\cos\phi\cos\theta\sin\phi\sin\theta
+\right) + 
+r\sin\phi
+\left(
+r\sin\phi\cos\theta\sin\phi\cos\theta + r\sin\phi\sin\theta\sin\phi\sin\theta
+\right) \\&=
+r^2\sin\phi
+\end{align}</script><p>所以</p>
 <script type="math/tex; mode=display">
-  \iiint\limits_Rf(x, y, z)dA = 
-  \iiint\limits_R
-  f(x(u, v, w), y(u, v, w), z(u, v, w))
-  \left|
-  \frac{\partial(x, y, z)}{\partial(u, v, w)}
-  \right|\ du\ dv\ dw.
-  \tag{6.6}\label{三重积分换元法}</script></li>
-</ul>
+\left|\frac{\partial(x, y, z)}{\partial(u, v, w)}\right| = r^2\sin\phi</script><p>代入式 $\eqref{三重积分换元法}$ 得</p>
+<script type="math/tex; mode=display">
+\iiint\limits_Rf(x, y, z)dV = 
+\iiint\limits_Rf(r\sin\phi\cos\theta, r\sin\phi\sin\theta, r\cos\theta)r^2\sin\phi\ drd\theta d\phi
+\tag{6.9}\label{球坐标的三重积分公式}</script><p>式 $\eqref{球坐标的三重积分公式}$ 即为球坐标的三重积分公式。</p>
 
       
 
@@ -512,7 +506,7 @@ dA =
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Calculus%E7%AC%94%E8%AE%B0-15-9-%E5%A4%9A%E9%87%8D%E7%A7%AF%E5%88%86%E7%9A%84%E6%8D%A2%E5%85%83%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">Calculus笔记-15.9-多重积分的换元法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86%E7%9A%84%E6%8D%A2%E5%85%83%E6%B3%95"><span class="toc-number">1.1.</span> <span class="toc-text">二重积分的换元法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%9B%85%E5%90%84%E6%AF%94%E5%BC%8F%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">1.1.1.</span> <span class="toc-text">雅各比式的定义</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9A%E7%90%86%EF%BC%9A%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86%E7%9A%84%E6%8D%A2%E5%85%83%E6%B3%95"><span class="toc-number">1.1.2.</span> <span class="toc-text">定理：二重积分的换元法</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E6%8D%A2%E5%85%83%E6%B3%95"><span class="toc-number">1.2.</span> <span class="toc-text">三重积分换元法</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Calculus%E7%AC%94%E8%AE%B0-15-9-%E5%A4%9A%E9%87%8D%E7%A7%AF%E5%88%86%E7%9A%84%E6%8D%A2%E5%85%83%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">Calculus笔记-15.9-多重积分的换元法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86%E7%9A%84%E6%8D%A2%E5%85%83%E6%B3%95"><span class="toc-number">1.1.</span> <span class="toc-text">二重积分的换元法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BC%95%E5%85%A5"><span class="toc-number">1.1.1.</span> <span class="toc-text">引入</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%9B%85%E5%90%84%E6%AF%94%E5%BC%8F%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">1.1.2.</span> <span class="toc-text">雅各比式的定义</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%94%A8%E9%9B%85%E5%90%84%E6%AF%94%E5%BC%8F%E6%9D%A5%E8%AE%A1%E7%AE%97%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86"><span class="toc-number">1.1.3.</span> <span class="toc-text">用雅各比式来计算二重积分</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86%E6%8D%A2%E5%85%83%E5%AE%9A%E7%90%86"><span class="toc-number">1.1.4.</span> <span class="toc-text">二重积分换元定理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9E%81%E5%9D%90%E6%A0%87%E7%9A%84%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86%E5%85%AC%E5%BC%8F"><span class="toc-number">1.1.5.</span> <span class="toc-text">极坐标的二重积分公式</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E6%8D%A2%E5%85%83%E6%B3%95"><span class="toc-number">1.2.</span> <span class="toc-text">三重积分换元法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E6%8D%A2%E5%85%83%E5%AE%9A%E7%90%86"><span class="toc-number">1.2.1.</span> <span class="toc-text">三重积分换元定理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%90%83%E5%9D%90%E6%A0%87%E7%9A%84%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86%E5%85%AC%E5%BC%8F"><span class="toc-number">1.2.2.</span> <span class="toc-text">球坐标的三重积分公式</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -694,6 +688,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">计算机图形学</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">线性代数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">哲学</a>
               </li>
              
@@ -702,19 +704,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">文学</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">线性代数</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">计算机图形学</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">微积分</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">文学</a>
               </li>
              
               <li class="article-tag-list-item">
