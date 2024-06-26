@@ -6,26 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://mossjd.github.io">
-  <title>Calculus笔记-16.2-直线积分 | MOSSJD的小站</title>
+  <title>Calculus笔记-16.7-曲面积分 | MOSSJD的小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Calculus笔记-16.2-直线积分">
+  <meta name="description" content="Calculus笔记-16.7-曲面积分">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Calculus笔记-16.2-直线积分">
-<meta property="og:url" content="https://mossjd.github.io/2024/05/13/Calculus/Calculus%E7%AC%94%E8%AE%B0-16-2-%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86/index.html">
+<meta property="og:title" content="Calculus笔记-16.7-曲面积分">
+<meta property="og:url" content="https://mossjd.github.io/2024/06/23/Calculus/Calculus%E7%AC%94%E8%AE%B0-16-7-%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/index.html">
 <meta property="og:site_name" content="MOSSJD的小站">
-<meta property="og:description" content="Calculus笔记-16.2-直线积分">
+<meta property="og:description" content="Calculus笔记-16.7-曲面积分">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405171510420.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406121054729.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406121129635.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405181214127.png">
-<meta property="article:published_time" content="2024-05-13T03:55:13.000Z">
-<meta property="article:modified_time" content="2024-06-17T16:32:24.238Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406232346567.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406261546333.png">
+<meta property="article:published_time" content="2024-06-23T13:17:44.000Z">
+<meta property="article:modified_time" content="2024-06-26T08:36:29.776Z">
 <meta property="article:author" content="MOSSJD">
 <meta property="article:tag" content="数学">
 <meta property="article:tag" content="Calculus">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405171510420.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406232346567.png">
   
     <link rel="alternative" href="/atom.xml" title="MOSSJD的小站" type="application/atom+xml">
   
@@ -171,259 +169,199 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Calculus/Calculus笔记-16-2-直线积分" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Calculus/Calculus笔记-16-7-曲面积分" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Calculus笔记-16.2-直线积分
+      Calculus笔记-16.7-曲面积分
     </h1>
   
 
         
-        <a href="/2024/05/13/Calculus/Calculus%E7%AC%94%E8%AE%B0-16-2-%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86/" class="archive-article-date">
-  	<time datetime="2024-05-13T03:55:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-05-13</time>
+        <a href="/2024/06/23/Calculus/Calculus%E7%AC%94%E8%AE%B0-16-7-%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/" class="archive-article-date">
+  	<time datetime="2024-06-23T13:17:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-06-23</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="Calculus笔记-16-2-直线积分"><a href="#Calculus笔记-16-2-直线积分" class="headerlink" title="Calculus笔记-16.2-直线积分"></a>Calculus笔记-16.2-直线积分</h3><span id="more"></span>
-<h4 id="直线积分"><a href="#直线积分" class="headerlink" title="直线积分"></a>直线积分</h4><h5 id="引入"><a href="#引入" class="headerlink" title="引入"></a>引入</h5><p>如图</p>
-<p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405171510420.png" alt=""></p>
-<ul>
-<li><p>考虑由参数方程</p>
+        <h3 id="Calculus笔记-16-7-曲面积分"><a href="#Calculus笔记-16-7-曲面积分" class="headerlink" title="Calculus笔记-16.7-曲面积分"></a>Calculus笔记-16.7-曲面积分</h3><span id="more"></span>
+<p>曲面积分和曲面面积的关系与直线积分和弧长的关系是一致的。设 $f$ 是一个三元函数，其定义域是一个曲面 $S$ 。我们定义 $f$ 的曲面积分是满足在 $f(x, y, z) = 1$ 时其值等于 $S$ 的面积的积分。我们首先从参数曲面开始，再讨论 $S$ 是二元函数的图像的特例。</p>
+<h4 id="数量场的曲面积分"><a href="#数量场的曲面积分" class="headerlink" title="数量场的曲面积分"></a>数量场的曲面积分</h4><h5 id="对参数曲面的积分"><a href="#对参数曲面的积分" class="headerlink" title="对参数曲面的积分"></a>对参数曲面的积分</h5><h6 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h6><script type="math/tex; mode=display">
+\text{设 $S$ 由向量方程}\\
+\mathbf r(u, v) = 
+x(u, v)\mathbf i + y(u, v)\mathbf j + z(u, v)\mathbf k
+\qquad(u, v)\in D\\
+\text{所确定，则 $f$ 对曲面 $S$ 的曲面积分为}\\
+\iint\limits_Sf(x, y, z)dS = 
+\lim_{m, n\to\infty}
+\sum_{i = 1}^m\sum_{j = 1}^nf(P_{ij})\Delta S_{ij} = 
+\iint\limits_Df(\mathbf r(u, v))|\mathbf r_u\times\mathbf r_v|dA\\
+\text{其中 $\mathbf r_u,\ \mathbf r_v\ne\mathbf 0$ 且 }
+\text{ $\mathbf r_u,\ \mathbf r_v$ 不平行}
+\tag{7.1}\label{数量场曲面积分的定义}</script><p>可以计算出， $\iint\limits_S1dS = \iint\limits_D|\mathbf r_u\times\mathbf r_v|dA = A(S)$ ，因此这个定义满足我们的要求。</p>
+<h5 id="曲面积分的物理意义"><a href="#曲面积分的物理意义" class="headerlink" title="曲面积分的物理意义"></a>曲面积分的物理意义</h5><p>形状为 $S$ ，在 $(x, y, z)$ 点密度为 $\rho(x, y, z)$ 的薄片，其<strong>质量</strong>(<strong>mass</strong>)为</p>
 <script type="math/tex; mode=display">
-  x = x(t)\qquad y = y(t)\qquad a\le t\le b
-  \tag{2.1}\label{参数方程}</script><p>  所确定的平面曲线 $C$ ，它也可以用向量方程 $\mathbf r(t) = x(t)\mathbf i + y(t)\mathbf j$ 来表示。其中 $C$ 是一条平滑曲线，即 $\mathbf r’$ 连续且 $\mathbf r’(t)\ne\mathbf 0$ 。</p>
-</li>
-<li><p>将参数区间 $[a, b]$ 分成 $n$ 个等宽子区间 $[t_{i  - 1}, t_i]$ ，令 $x_i = x(t_i)$ 且 $y_i = y(t_i)$ ，则对应的点 $P_i(x_i, y_i)$ 将 $C$ 分割成 $n$ 个子弧段，分别长 $\Delta s_1, \Delta s_2, \dots, \Delta s_n$ 。在第 $i$ 个子弧段中取采样点 <script type="math/tex">P_i^*(x_i^*, y_i^*)</script> ，这个点对应 $[t_{i - 1}, t_i]$ 中的点 $t_i^*$ 。</p>
-</li>
-<li><p>令 $f$ 为定义域包括曲线 $C$ 的二元函数，和</p>
+m = \iint\limits_S\rho(x, y, z)dS</script><p>质心坐标为 $(\bar x, \bar y, \bar z)$ ，其中</p>
 <script type="math/tex; mode=display">
-  \sum_{i = 1}^nf(x_i^*, y_i^*)\Delta s_i</script><p>  的形式和黎曼和相似。我们可以将这些和进行求和，并给出直线积分的定义：</p>
-</li>
-</ul>
-<h5 id="直线积分的定义"><a href="#直线积分的定义" class="headerlink" title="直线积分的定义"></a>直线积分的定义</h5><ul>
-<li><p>若 $f$ 在由 $\eqref{参数方程}$ 定义的曲线 $C$ 上有定义，则 $\boldsymbol f$ <strong>沿</strong> $\boldsymbol C$ <strong>的直线积分</strong>(<strong>line integral of $\boldsymbol f$ along $\boldsymbol C$ </strong>)为</p>
+\bar x = \iint\limits_Sx\rho(x, y, z)dS\qquad
+\bar y = \iint\limits_Sy\rho(x, y, z)dS\qquad
+\bar z = \iint\limits_Sz\rho(x, y, z)dS</script><p>转动惯量也可以用类似的定义写出来。</p>
+<h5 id="对函数图像的积分"><a href="#对函数图像的积分" class="headerlink" title="对函数图像的积分"></a>对函数图像的积分</h5><p>任何由方程 $z = g(x, y)$ 所表示的曲面 $S$ 都可被看作由参数方程</p>
 <script type="math/tex; mode=display">
-  \int_Cf(x, y)ds = \lim_{n\to\infty}\sum^n_{i = 1}f(x_i^*, y_i^*)\Delta s_i
-  \tag{2.2}\label{直线积分1}</script><p>  如果这个极限存在的话。</p>
-</li>
-<li><p>从 $10.2$ 节我们知道， $C$ 的长度为</p>
+x = x\qquad y = y\qquad z = g(x, y)</script><p>所表示的参数曲面，因此我们有：</p>
 <script type="math/tex; mode=display">
-  L = \int_a^b
-  \sqrt{
-  \left(\frac{dx}{dt}\right)^2 + 
-  \left(\frac{dy}{dt}\right)^2
-  }dt
-  \tag{2.3}\label{弧长公式}</script><p>  ，则式 $\eqref{直线积分1}$ 也可写成</p>
+\mathbf r_x = 
+\mathbf i + 
+\left(\frac{\partial g}{\partial x}\right)\mathbf k
+\qquad
+\mathbf r_y = 
+\mathbf j + 
+\left(\frac{\partial g}{\partial y}\right)\mathbf k</script><p>因此</p>
 <script type="math/tex; mode=display">
-  \int_Cf(x, y)ds = 
-  \int_a^b
-  f(x(t), y(t))
-  \sqrt{
-  \left(\frac{dx}{dt}\right)^2 + 
-  \left(\frac{dy}{dt}\right)^2
-  }dt.
-  \tag{2.4}\label{直线积分2}</script><p>  直线积分的值和 $t$ 的取值无关，因为它只与 $a$ 到 $b$ 的路程有关。</p>
-</li>
-<li><p>若 $s(t)$ 为 $C$ 在 $\mathbf r(a)$ 和 $\mathbf r(b)$ 之间的长度，则</p>
+\mathbf r_x\times\mathbf r_y = 
+-\frac{\partial g}{\partial x}\mathbf i
+-\frac{\partial g}{\partial y}\mathbf j
++\mathbf k
+\tag{7.2}\label{函数图像的法线}</script><p>而</p>
 <script type="math/tex; mode=display">
-  \frac{ds}{dt} = \sqrt{
-  \left(\frac{dx}{dt}\right)^2 + 
-  \left(\frac{dy}{dt}\right)^2
-  }</script><p>  则</p>
+|\mathbf r_x\times\mathbf r_y| = 
+\sqrt{
+\left(
+\frac{\partial z}{\partial x}
+\right)^2 + 
+\left(
+\frac{\partial z}{\partial y}
+\right)^2 + 1
+}</script><p>因此式 $\eqref{数量场曲面积分的定义}$ 变为</p>
 <script type="math/tex; mode=display">
-  ds = \sqrt{
-  \left(\frac{dx}{dt}\right)^2 + 
-  \left(\frac{dy}{dt}\right)^2
-  }dt.</script></li>
-<li><p>在 $C$ 是从 $(a, 0)$ 到 $(b, 0)$ 的线段的特例中，以 $x$ 为参变量，我们可以将 $C$ 的参数方程写为： $x = x,\ y = 0,\ a\le x\le b$ ，则式  $\eqref{直线积分2}$ 变为</p>
+\iint\limits_Sf(x, y, z)dS =
+\iint\limits_Df(x, y, g(x, y))
+\sqrt{
+\left(
+\frac{\partial z}{\partial x}
+\right)^2 + 
+\left(
+\frac{\partial z}{\partial y}
+\right)^2 + 1
+}dA
+\tag{7.3}\label{对函数图像的曲面积分}</script><p>式 $\eqref{对函数图像的曲面积分}$ 表示对函数在定义域 $D$ 内图像的曲面积分。</p>
+<hr>
+<p>当 $z$ 不是因变量而是自变量时，式 $\eqref{对函数图像的曲面积分}$ 同样可以化为相应的形式，比如当 $S$ 满足方程为 $y = h(x, z)$ ，而 $D$ 是 $S$ 在 $xz$ 平面上的投影时，</p>
 <script type="math/tex; mode=display">
-  \int_Cf(x, y)ds = \int_a^bf(x, 0)dx
-  \tag{2.5}\label{单变量积分}</script><p>  ，则直线积分在这种情况下退化为一般单变量积分(ordinary single integral)。</p>
-</li>
-<li><p>和一般单变量积分一样，我们将对正值函数的直线积分理解为面积。形式化地，若 $f(x, y)\ge 0$ ， $\int_Cf(x, y)ds$ 代表下图中的“围栏”的面积，其中底为 $C$ ，点 $(x, y)$ 上的高度为 $f(x, y)$ 。</p>
-<p>  <img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406121054729.png" alt=""></p>
-</li>
-</ul>
-<h4 id="分段曲线的直线积分"><a href="#分段曲线的直线积分" class="headerlink" title="分段曲线的直线积分"></a>分段曲线的直线积分</h4><ul>
-<li>若 $C$ 是一条<strong>分段平滑曲线(piecewise-smooth curve)</strong>，即 $C$ 是由有限条首尾相接的平滑曲线 $C_1, C_2, \dots, C_n$ 组成的曲线，则<script type="math/tex; mode=display">
-  \int_Cf(x, y)ds = 
-  \int_{C_1}f(x, y)ds + 
-  \int_{C_2}f(x, y)ds + 
-  \dots + 
-  \int_{C_n}f(x, y)ds.
-  \tag{2.6}\label{分段积分}</script></li>
-</ul>
-<h4 id="物理上的应用"><a href="#物理上的应用" class="headerlink" title="物理上的应用"></a>物理上的应用</h4><p>直线积分 $\int_Cf(x, y)ds$ 的物理意义由 $f$ 的物理意义来决定。</p>
-<ul>
-<li><p>设 $\rho(x, y)$ 代表形状类似曲线 $C$ 的细线在点 $(x, y)$ 的线密度，则细线从 $P_{i - 1}$ 到 $P_i$ 的质量可以用 <script type="math/tex">\rho(x_i^*, y_i^*)\Delta s_i</script> 来近似，细线的总质量可以用 <script type="math/tex">\sum\rho(x_i^*, y_i^*)\Delta s_i</script> 来近似。将这个和取极限，我们可以得到曲线的<strong>质量(mass)</strong> $m$ ：</p>
+\iint\limits_Sf(x, y, z)dS =
+\iint\limits_Df(x, h(x, z), z)
+\sqrt{
+\left(
+\frac{\partial y}{\partial x}
+\right)^2 + 
+\left(
+\frac{\partial y}{\partial z}
+\right)^2 + 1
+}dA.</script><h4 id="向量场的曲面积分"><a href="#向量场的曲面积分" class="headerlink" title="向量场的曲面积分"></a>向量场的曲面积分</h4><h5 id="有向曲面"><a href="#有向曲面" class="headerlink" title="有向曲面"></a>有向曲面</h5><p>对向量场计算其曲面积分时会遇到朝向的问题。因此我们需要事先规定曲面的正方向。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406232346567.png" alt=""></p>
+<p>如上图，对任意可定向（有两个面）的曲面，其在 $(x, y, z)$ 点会有两个方向相反的法向量 $\mathbf n_1$ 和 $\mathbf n_2 = -\mathbf n_1$ 。</p>
+<p>如果可以在任意的点 $(x, y, z)$ 选取 $\mathbf n$ ，使得 $\mathbf n$ 在 $S$ 上连续变化，则 $S$ 被称为<strong>有向曲面</strong>(<strong>oriented surface</strong>)，而这时对于 $\mathbf n$ 的选取被称为一个<strong>朝向</strong>(<strong>orientation</strong>)。任意可定向的曲面都会有两种朝向。</p>
+<p>对曲面 $z = g(x, y)$ ，我们用式 $\eqref{函数图像的法线}$ 来表示其自然朝向(natural orientation)，其单位法向量为</p>
 <script type="math/tex; mode=display">
-  m = 
-  \lim_{n\to\infty}
-  \sum_{i = 1}^n
-  \rho(x_i^*, y_i^*)
-  \Delta s_i = 
-  \int_C\rho(x, y)ds.
-  \tag{2.7}\label{质量}</script></li>
-<li><p>具有密度函数 $\rho$ 的细线的<strong>质心(center of mass)</strong>位于点 $(\bar x, \bar y)$ ，其中</p>
+\mathbf n =
+\frac
+{
+-\frac{\partial g}{\partial x}\mathbf i
+-\frac{\partial g}{\partial y}\mathbf j
++\mathbf k
+}
+{
+\sqrt{
+\left(
+\frac{\partial z}{\partial x}
+\right)^2 + 
+\left(
+\frac{\partial z}{\partial y}
+\right)^2 + 1
+}
+}
+\tag{7.4}\label{函数图像单位法向量}</script><p>因为 $\mathbf k$ 分量是正数，式 $\eqref{函数图像单位法向量}$ 给出了曲面的<em>上</em>(<em>upward</em>)朝向</p>
+<hr>
+<p>如果 $S$ 是一个由参数方程 $\mathbf r(u, v)$ 给出的光滑有向曲面，则它的朝向由单位法向量</p>
 <script type="math/tex; mode=display">
-  \bar x = \frac1m\int_Cx\rho(x, y)ds\qquad
-  \bar y = \frac1m\int_Cy\rho(x, y)ds.
-  \tag{2.8}\label{质心}</script></li>
-</ul>
-<h4 id="对坐标的直线积分"><a href="#对坐标的直线积分" class="headerlink" title="对坐标的直线积分"></a>对坐标的直线积分</h4><ul>
-<li><p>将 $\Delta s_i$ 替换为 $\Delta x_i = x_i - x_{i - 1}$ 或 $\Delta y_i = y_i - y_{i - 1}$ ，则我们得到 $\boldsymbol f$ <strong>沿 $\boldsymbol C$ 对 $\boldsymbol x$ 和 $\boldsymbol y$ 的直线积分</strong>(<strong>line integrals of $\boldsymbol f$ along $\boldsymbol C$ with respect to $\boldsymbol x$ and $\boldsymbol y$ </strong>)：</p>
+\mathbf n = 
+\frac
+{\mathbf r_u\times\mathbf r_v}
+{|\mathbf r_u\times\mathbf r_v|}
+\tag{7.5}\label{参数曲面单位法向量}</script><p>给出，而与其相反的朝向则由 $-\mathbf n$ 给出。</p>
+<hr>
+<p>对于<strong>闭合曲面</strong>(<strong>closed surface</strong>)即其本身为空间区域 $E$ 的边界的曲面，通常将其<strong>正向</strong>(<strong>positive orientation</strong>)设为法向量指向 $E$ 的<em>外侧</em>的朝向。</p>
+<h5 id="曲面积分的引入"><a href="#曲面积分的引入" class="headerlink" title="曲面积分的引入"></a>曲面积分的引入</h5><p>设 $S$ 是单位法向量为 $\mathbf n$ 的有向曲面，而密度为 $\rho(x, y, z)$ ，速度场为 $\mathbf v(x, y, z)$ 的流体正在流经 $S$ 。则其单位面积的流速为 $\rho\mathbf v$ 。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406261546333.png" alt=""></p>
+<p>如图，若将 $S$ 分成小块 $S_{ij}$ ，则 $S_{ij}$ 近似于平面。因为 $\rho\mathbf v$ 沿单位法向量 $\mathbf n$ 的分量为 $\rho\mathbf v\cdot\mathbf n$ ，我们可以将单位时间沿 $\mathbf n$ 流经 $S_{ij}$ 的流体质量近似为</p>
 <script type="math/tex; mode=display">
-  \int_Cf(x, y)dx = 
-  \lim_{n\to\infty}
-  \sum_{i = 1}^n
-  f(x_i^*, y_i^*)
-  \Delta x_i
-  \tag{2.9}\label{对x的直线积分}</script><script type="math/tex; mode=display">
-  \int_Cf(x, y)dx = 
-  \lim_{n\to\infty}
-  \sum_{i = 1}^n
-  f(x_i^*, y_i^*)
-  \Delta x_i
-  \tag{2.10}\label{对y的直线积分}</script><p>  相对地，我们将积分 $\int_Cf(x, y)ds$ 称为<strong>对弧长的直线积分</strong>。</p>
-</li>
-<li><p>我们同样可以用 $t$ 来对对坐标的直线积分求值：</p>
+(\rho\mathbf v\cdot\mathbf n)A(S_{ij})</script><p>，其中 $\rho,\ \mathbf v$ 和 $\mathbf n$ 的值在 $S_{ij}$ 内的某一点取得。对这些量求和并取极限，我们可以得到函数 $\rho\mathbf v\cdot\mathbf n$ 对 $S$ 的曲面积分：</p>
 <script type="math/tex; mode=display">
-  \int_Cf(x, y)dx = 
-  \int_Cf(x(t), y(t))x'(t)dt \\
-  \int_Cf(x, y)dy = 
-  \int_Cf(x(t), y(t))y'(t)dt
-  \tag{2.11}\label{对t的直线积分}</script></li>
-<li><p>对 $x$ 和 $y$ 的直线积分经常同时出现。习惯上将其缩写为：</p>
+\iint\limits_S\rho\mathbf v\cdot\mathbf ndS = 
+\iint\limits_S\rho(x, y, z)\mathbf v(x, y, z)
+\cdot\mathbf n(x, y, z)dS
+\tag{7.6}\label{流速的曲面积分}</script><p>其物理意义为经过 $S$ 的液体流速。</p>
+<hr>
+<p>若令 $\mathbf F = \rho\mathbf v$ ，则 $\mathbf F$ 也是在 $\mathbb R^3$ 上的向量场，而式 $\eqref{流速的曲面积分}$ 变为</p>
 <script type="math/tex; mode=display">
-  \int_CP(x, y)dx + \int_CQ(x, y)dy = 
-  \int_CP(x, y)dx + Q(x, y)dy.
-  \tag{2.12}\label{对坐标直线积分的缩写}</script></li>
-<li><p>起点为 $\mathbf r_0$ ，终点为 $\mathbf r_1$ 的线段可以由向量表示法</p>
+\iint\limits_S\mathbf F\cdot\mathbf ndS</script><p>这样形式的曲面积分在物理中经常出现，即使在 $\mathbf F$ 不为 $\rho\mathbf v$ 时。而这种积分被称为 $\mathbf F$ 对 $S$ 的<em>曲面积分</em>(<em>surface integral</em>)或<em>通量积分</em>(<em>flux integral</em>)。</p>
+<h5 id="向量场曲面积分的定义"><a href="#向量场曲面积分的定义" class="headerlink" title="向量场曲面积分的定义"></a>向量场曲面积分的定义</h5><script type="math/tex; mode=display">
+\text{若 $\mathbf F$ 是在有向曲面 $S$ 上有定义的连续向量场，其单位法向量为 $\mathbf n$ ，则 $\mathbf F$ 对 $S$ 的曲面积分为}\\
+\iint\limits_S\mathbf F\cdot d\mathbf S = 
+\iint\limits_S\mathbf F\cdot\mathbf ndS\\
+\text{这个积分也被称为 $F$ 对 $S$ 的通量.}
+\tag{7.7}\label{向量场曲面积分的定义}</script><p>定义 $\eqref{向量场曲面积分的定义}$ 的意思是，向量场对 $S$ 的曲面积分等于其法向分量对 $S$ 的积分。这和定义 $\eqref{数量场曲面积分的定义}$ 是一致的。</p>
+<h5 id="对参数曲面的积分-1"><a href="#对参数曲面的积分-1" class="headerlink" title="对参数曲面的积分"></a>对参数曲面的积分</h5><p>若 $S$ 由位矢函数 $\mathbf r(u, v)$ 给出，则 $\mathbf n$ 由式 $\eqref{参数曲面单位法向量}$ 给出。由定义 $\eqref{向量场曲面积分的定义}$ 和等式 $\eqref{数量场曲面积分的定义}$ ，我们有：</p>
 <script type="math/tex; mode=display">
-  \mathbf r(t) = (1 - t)\mathbf r_0 + t\mathbf r_1\qquad 0\le t\le 1
-  \tag{2.13}\label{线段的向量表示法}</script><p>  给出。</p>
-</li>
-</ul>
-<h4 id="直线积分的性质"><a href="#直线积分的性质" class="headerlink" title="直线积分的性质"></a>直线积分的性质</h4><ul>
-<li><p>当我们对所求直线积分给出参数化 $x = x(t),\ y = y(t),\ a\le t\le b$ ，则这种参数化确定了一种方向，如下图：</p>
-<p>  <img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202406121129635.png" alt=""></p>
-<p>  其中正方向代表了 $t$ 增加的方向。</p>
-<p>  若我们认为 $-C$ 代表了 $C$ 的反方向，则我们有</p>
+\begin{align}
+\iint\limits_S\mathbf F\cdot d\mathbf S &=
+\iint\limits_S\mathbf F\cdot
+\frac{\mathbf r_u\times\mathbf r_v}
+{|\mathbf r_u\times\mathbf r_v|}
+dS \\&=
+\iint\limits_S
+\left[
+\mathbf F(\mathbf r(u, v))\cdot
+\frac{\mathbf r_u\times\mathbf r_v}
+{|\mathbf r_u\times\mathbf r_v|}
+\right]
+|\mathbf r_u\times\mathbf r_v|
+dA
+\end{align}</script><p>其中 $D$ 为参数定义域。</p>
+<p>则有：</p>
 <script type="math/tex; mode=display">
-  \int_{-C}f(x, y)dx = -\int_Cf(x, y)dx\qquad
-  \int_{-C}f(x, y)dy = -\int_Cf(x, y)dy</script></li>
-<li><p>但当我们对弧长求积分时，则有：</p>
+\iint\limits_S\mathbf F\cdot d\mathbf S = 
+\iint\limits_S\mathbf F\cdot(\mathbf r_u\times\mathbf r_v)dA.
+\tag{7.8}\label{向量场对参数曲面的积分}</script><h5 id="对函数图像的积分-1"><a href="#对函数图像的积分-1" class="headerlink" title="对函数图像的积分"></a>对函数图像的积分</h5><p>当 $S$ 由图像 $z = g(x, y)$ 给出时，我们将 $x$ 和 $y$ 当作参数，结合方程 $\eqref{函数图像单位法向量}$ 可以写出</p>
 <script type="math/tex; mode=display">
-  \int_{-C}f(x, y)ds = \int_Cf(x, y)ds</script><p>  因为无论方向怎么变化， $\Delta s$ 的值总是正的。</p>
-</li>
-</ul>
-<h4 id="空间中的直线积分"><a href="#空间中的直线积分" class="headerlink" title="空间中的直线积分"></a>空间中的直线积分</h4><ul>
-<li><p>设 $C$ 是由参数方程</p>
+\mathbf F\cdot(\mathbf r_x\times\mathbf r_y) = 
+(P\mathbf i + Q\mathbf j + R\mathbf k)\cdot
+\left(
+-\frac{\partial g}{\partial x}\mathbf i
+-\frac{\partial g}{\partial y}\mathbf j
++\mathbf k
+\right)</script><p>则式 $\eqref{向量场对参数曲面的积分}$ 变为</p>
 <script type="math/tex; mode=display">
-  x = x(t)\qquad y = y(t)\qquad z = z(t)\qquad
-  a\le t\le b</script><p>  或向量方程 $\mathbf r(t) = x(t)\mathbf i + y(t)\mathbf j + z(t)\mathbf k$ 所确定的空间曲线。若 $f$ 是在积分区域 $C$ 中连续的三元函数，则定义 $\boldsymbol f$ <strong>沿</strong> $\boldsymbol C$ <strong>的（对弧长）直线积分</strong>(<strong>line integral of $\boldsymbol f$ along $\boldsymbol C$ </strong>)为：</p>
+\iint\limits_S\mathbf F\cdot d\mathbf S = 
+\iint\limits_D
+\left(
+-\frac{\partial g}{\partial x}P
+-\frac{\partial g}{\partial y}Q
++\mathbf R
+\right)dA
+\tag{7.9}\label{向量场对函数图像的积分}</script><p>式 $\eqref{向量场对函数图像的积分}$ 假设了 $S$ 是向上的。对于向下的曲面，我们将其乘以 $-1$ 。当 $S$ 由 $y = h(x, z)$ 或 $x = k(y, z)$ 给出时，我们也可以写出类似的公式。</p>
+<h5 id="高斯公式"><a href="#高斯公式" class="headerlink" title="高斯公式"></a>高斯公式</h5><p>除了引入中的流体，向量场的曲面积分也在其他物理领域有着广泛应用。</p>
+<p>比如说，若 $\mathbf E$ 是一个电场，则曲面积分</p>
 <script type="math/tex; mode=display">
-  \int_Cf(x, y, z)ds = \lim_{n\to\infty}
-  \sum_{i = 1}^nf(x_i^*, y_i^*, z_i^*)\Delta s_i
-  \tag{2.14}\label{空间直线积分1}</script><p>  我们用和式 $\eqref{直线积分2}$ 相似的方法来对其求值：</p>
+\iint\limits_S\mathbf E\cdot d\mathbf S</script><p>表示 $\mathbf E$ 穿过曲面 $S$ 的<strong>电通量</strong>(<strong>electric flux</strong>)。<strong>高斯公式</strong>指出，由闭合曲面 $S$ 所包围的电荷量等于</p>
 <script type="math/tex; mode=display">
-  \int_Cf(x, y, z)ds = 
-  \int_a^bf(x(t), y(t), z(t))
-  \sqrt{
-  \left(\frac{dx}{dt}\right)^2 + 
-  \left(\frac{dy}{dt}\right)^2 + 
-  \left(\frac{dz}{dt}\right)^2
-  }dt
-  \tag{2.15}\label{空间直线积分2}</script><p>  注意到积分 $\eqref{直线积分2}$ 和 $\eqref{空间直线积分2}$ 都可以写成更精简的形式：</p>
-<script type="math/tex; mode=display">
-  \int_a^bf(\mathbf r(t))
-  |\mathbf r'(t)|
-  dt</script><p>  在 $f(x, y, z) = 1$ 的特例中，我们得到：</p>
-<script type="math/tex; mode=display">
-  \int_Cds = \int_a^b|\mathbf r'(t)|dt = L</script><p>  其中 $L$ 为曲线 $C$ 的弧长。</p>
-</li>
-<li><p>沿 $C$ 对 $x$ , $y$ , $z$ 的直线积分也可以被分别定义出来。比如：</p>
-<script type="math/tex; mode=display">
-  \begin{align}
-  \int_Cf(x, y, z)dz &= 
-  \lim_{n\to\infty}\sum_{i = 1}^n
-  f(x_i^*, y_i^*, z_i^*)\Delta z_i \\&=
-  \int_a^bf(x(t), y(t), z(t))z'(t)dt
-  \end{align}</script><p>  因此，我们可以通过将 $(x, y, z, dx, dy, dz)$ 都以参变量 $t$ 来表示的方式来计算</p>
-<script type="math/tex; mode=display">
-  \int_CP(x, y, z)dx + Q(x, y, z)dy + R(x, y, z)dz.
-  \tag{2.16}\label{对坐标的空间直线积分}</script></li>
-</ul>
-<h4 id="向量场的直线积分"><a href="#向量场的直线积分" class="headerlink" title="向量场的直线积分"></a>向量场的直线积分</h4><h5 id="引入-1"><a href="#引入-1" class="headerlink" title="引入"></a>引入</h5><p>如何求变化力在沿曲线运动的过程中所做的功？</p>
-<ul>
-<li><p>从 $6.4$ 节中，我们知道，由变化力在粒子沿 $x$ 轴由 $a$ 运动到 $b$ 时所做的功为 $W = \int_a^bf(x)dx$ ；从 $12.3$ 节中，我们知道，由不变力 $\mathbf F$ 在空间中从点 $P$ 运动到另一点 $Q$ 时所做的功为 $W = \mathbf F\cdot\mathbf D$ ，其中 $\mathbf D = \overrightarrow{PQ}$ 是位移矢量。</p>
-</li>
-<li><p>设 $\mathbf F = P\mathbf i + Q\mathbf j + R\mathbf k$ 是在 $\mathbb R^3$ 中连续的力场，且通过移动粒子沿平滑的曲线 $C$ 做功。</p>
-<p>  <img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405181214127.png" alt=""></p>
-<p>  ​        如上图，通过将参变量区间 $[a, b]$ 分成等长的子区间，我们将 $C$ 分割成子弧段 $P_{i - 1}P_i$ ，每一个长 $\Delta s_i$ 。在第 $i$ 个子区间对应参变量值 <script type="math/tex">t_i^*</script> 选择采样点 <script type="math/tex">P_i^*(x_i^*, y_i^*, z_i^*)</script> 。若 $\Delta s_i$ 足够小，则粒子在从 $P_{i - 1}$ 到 $P_i$ 的运动过程可以用在 <script type="math/tex">P_i^*</script> 的单位切向量 <script type="math/tex">\mathbf T(t_i^*)</script> 的方向来近似。因此力 $\mathbf F$ 在将粒子由 $P_{i - 1}$ 推动到 $P_i$ 的过程中所做的功可以近似为</p>
-<script type="math/tex; mode=display">
-  \mathbf F(x_i^*, y_i^*, z_i^*)\cdot
-  [\Delta s_i\mathbf T(t_i^*)] = 
-  [\mathbf F(x_i^*, y_i^*, z_i^*)\cdot
-  \mathbf T(t_i^*)]\Delta s_i</script><p>  ，而将粒子沿曲线 $C$ 推动时所做的总功可以近似为</p>
-<script type="math/tex; mode=display">
-  \sum_{i = 1}^n
-  [\mathbf F(x_i^*, y_i^*, z_i^*)\cdot
-  \mathbf T(x_i^*, y_i^*, z_i^*)]\Delta s_i
-  \tag{2.17}\label{功的黎曼和}</script><p>  ，其中 $\mathbf T(x, y, z)$ 为点 $(x, y, z)$ 在 $C$ 上的单位切向量。我们可以直观地认为这个近似在 $n$ 变大时会变得更好。因此我们将力场 $\mathbf F$ 所做的<strong>功</strong>(<strong>work</strong>) $W$ 定义为黎曼和 $\eqref{功的黎曼和}$ 的极限，即：</p>
-<script type="math/tex; mode=display">
-  W = 
-  \int_C\mathbf F(x, y, z)\cdot
-  \mathbf T(x, y, z)ds = 
-  \int_C\mathbf F\cdot\mathbf Tds.
-  \tag{2.18}\label{功的定义}</script><p>  式 $\eqref{功的定义}$ 表示<em>功就是力的切向分量对弧长的积分</em>。</p>
-</li>
-<li><p>如果曲线由向量方程 $\mathbf r(t) = x(t)\mathbf i + y(t)\mathbf j + z(t)\mathbf k$ 给出，则 $\mathbf T(t) = \mathbf r’(t) / |\mathbf r’(t)|$  ，则用式 $\eqref{空间直线积分2}$ 我们可以将 $\eqref{功的定义}$ 改写为</p>
-<script type="math/tex; mode=display">
-  W = 
-  \int_a^b\mathbf F(\mathbf r(t))\cdot
-  \frac{\mathbf r'(t)}{|\mathbf r'(t)|}
-  |\mathbf r'(t)|dt = 
-  \int_a^b\mathbf F(r(t))\cdot\mathbf r'(t)dt.</script><p>  这个积分通常缩写为 $\int_C\mathbf F\cdot d\mathbf r$ ，也会在物理的其他领域中出现。因此我们就可以得出以下关于<em>任何</em>向量场的的定义：</p>
-</li>
-</ul>
-<h5 id="向量场直线积分的定义"><a href="#向量场直线积分的定义" class="headerlink" title="向量场直线积分的定义"></a>向量场直线积分的定义</h5><ul>
-<li>令 $\mathbf F$ 为由向量方程 $\mathbf r(t), a\le t\le b$ 所确定，在平滑曲线 $C$ 上有定义的连续向量场，则 $\mathbf F$ <strong>沿</strong> $\boldsymbol C$ <strong>的直线积分</strong>(<strong>line integral of</strong> $\mathbf F$ <strong>along</strong> $\boldsymbol C$ ) 为：<script type="math/tex; mode=display">
-  \int_C\mathbf F\cdot d\mathbf r = 
-  \int_a^b\mathbf F(\mathbf r(t))\cdot
-  \mathbf r'(t)dt = 
-  \int_C\mathbf F\cdot\mathbf Tds.
-  \tag{2.19}\label{向量场直线积分的定义}</script>  其中 $\mathbf F(\mathbf r(t))$ 为向量场 $\mathbf F(x(t), y(t), z(t))$ 的缩写， $d\mathbf r = \mathbf r’(t)dt$ 。</li>
-</ul>
-<h5 id="向量场和数量场的直线积分"><a href="#向量场和数量场的直线积分" class="headerlink" title="向量场和数量场的直线积分"></a>向量场和数量场的直线积分</h5><ul>
-<li>设在 $\mathbb R^3$ 上的向量场 $\mathbf F$ 由分量式方程 $\mathbf F = P\mathbf i + Q\mathbf j + R\mathbf k$ 给出，则由定义 $\eqref{向量场直线积分的定义}$ 可知<script type="math/tex; mode=display">
-  \begin{align}
-  \int_C\mathbf F\cdot d\mathbf r &=
-  \int_a^b\mathbf F(x, y, z)\cdot
-  \mathbf r'(t)dt \\&=
-  \int_a^b\mathbf F(
-  P\mathbf i + Q\mathbf j + R\mathbf k
-  )\cdot
-  (x'(t)\mathbf i + 
-  y'(t)\mathbf j + 
-  z'(t)\mathbf k)dt \\&=
-  \int_a^b[
-  P(x(t), y(t), z(t))x'(t) + 
-  Q(x(t), y(t), z(t))y'(t) + 
-  R(x(t), y(t), z(t))z'(t)
-  ]dt
-  \end{align}</script>  而最后一行恰恰是 $\eqref{对坐标的空间直线积分}$ 中的直线积分，则有：<script type="math/tex; mode=display">
-  \int_C\mathbf F\cdot d\mathbf r = 
-  \int_a^b Pdx + Qdy + Rdz\qquad\text{其中 }
-  \mathbf F = P\mathbf i + Q\mathbf j + R\mathbf k.</script></li>
-</ul>
+Q = \varepsilon_0\iint\limits_S\mathbf E\cdot d\mathbf S
+\tag{7.10}\label{高斯公式}</script><p>其中 $\varepsilon_0$ 是真空介电系数。</p>
 
       
 
@@ -460,18 +398,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2024/05/19/%E9%9A%8F%E7%AC%94%E4%B8%8E%E6%97%A5%E8%AE%B0/%E4%B8%8D%E9%80%9F%E4%B9%8B%E5%AE%A2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          不速之客
-        
-      </div>
-    </a>
   
-  
-    <a href="/2024/05/13/Calculus/Calculus%E7%AC%94%E8%AE%B0-16-1-%E5%90%91%E9%87%8F%E5%9C%BA/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Calculus笔记-16.1-向量场</div>
+    <a href="/2024/06/20/Calculus/Calculus%E7%AC%94%E8%AE%B0-16-6-%E5%8F%82%E6%95%B0%E6%9B%B2%E9%9D%A2%E5%8F%8A%E9%9D%A2%E7%A7%AF/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Calculus笔记-16.6-参数曲面及面积</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -498,7 +427,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Calculus%E7%AC%94%E8%AE%B0-16-2-%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="toc-number">1.</span> <span class="toc-text">Calculus笔记-16.2-直线积分</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="toc-number">1.1.</span> <span class="toc-text">直线积分</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BC%95%E5%85%A5"><span class="toc-number">1.1.1.</span> <span class="toc-text">引入</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">1.1.2.</span> <span class="toc-text">直线积分的定义</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%86%E6%AE%B5%E6%9B%B2%E7%BA%BF%E7%9A%84%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="toc-number">1.2.</span> <span class="toc-text">分段曲线的直线积分</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E4%B8%8A%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-number">1.3.</span> <span class="toc-text">物理上的应用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%B9%E5%9D%90%E6%A0%87%E7%9A%84%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="toc-number">1.4.</span> <span class="toc-text">对坐标的直线积分</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="toc-number">1.5.</span> <span class="toc-text">直线积分的性质</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A9%BA%E9%97%B4%E4%B8%AD%E7%9A%84%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="toc-number">1.6.</span> <span class="toc-text">空间中的直线积分</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E5%9C%BA%E7%9A%84%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="toc-number">1.7.</span> <span class="toc-text">向量场的直线积分</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BC%95%E5%85%A5-1"><span class="toc-number">1.7.1.</span> <span class="toc-text">引入</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E5%9C%BA%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">1.7.2.</span> <span class="toc-text">向量场直线积分的定义</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E5%9C%BA%E5%92%8C%E6%95%B0%E9%87%8F%E5%9C%BA%E7%9A%84%E7%9B%B4%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="toc-number">1.7.3.</span> <span class="toc-text">向量场和数量场的直线积分</span></a></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Calculus%E7%AC%94%E8%AE%B0-16-7-%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86"><span class="toc-number">1.</span> <span class="toc-text">Calculus笔记-16.7-曲面积分</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E9%87%8F%E5%9C%BA%E7%9A%84%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86"><span class="toc-number">1.1.</span> <span class="toc-text">数量场的曲面积分</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AF%B9%E5%8F%82%E6%95%B0%E6%9B%B2%E9%9D%A2%E7%9A%84%E7%A7%AF%E5%88%86"><span class="toc-number">1.1.1.</span> <span class="toc-text">对参数曲面的积分</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">定义</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86%E7%9A%84%E7%89%A9%E7%90%86%E6%84%8F%E4%B9%89"><span class="toc-number">1.1.2.</span> <span class="toc-text">曲面积分的物理意义</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AF%B9%E5%87%BD%E6%95%B0%E5%9B%BE%E5%83%8F%E7%9A%84%E7%A7%AF%E5%88%86"><span class="toc-number">1.1.3.</span> <span class="toc-text">对函数图像的积分</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E5%9C%BA%E7%9A%84%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86"><span class="toc-number">1.2.</span> <span class="toc-text">向量场的曲面积分</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9C%89%E5%90%91%E6%9B%B2%E9%9D%A2"><span class="toc-number">1.2.1.</span> <span class="toc-text">有向曲面</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86%E7%9A%84%E5%BC%95%E5%85%A5"><span class="toc-number">1.2.2.</span> <span class="toc-text">曲面积分的引入</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E5%9C%BA%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">1.2.3.</span> <span class="toc-text">向量场曲面积分的定义</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AF%B9%E5%8F%82%E6%95%B0%E6%9B%B2%E9%9D%A2%E7%9A%84%E7%A7%AF%E5%88%86-1"><span class="toc-number">1.2.4.</span> <span class="toc-text">对参数曲面的积分</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AF%B9%E5%87%BD%E6%95%B0%E5%9B%BE%E5%83%8F%E7%9A%84%E7%A7%AF%E5%88%86-1"><span class="toc-number">1.2.5.</span> <span class="toc-text">对函数图像的积分</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%AB%98%E6%96%AF%E5%85%AC%E5%BC%8F"><span class="toc-number">1.2.6.</span> <span class="toc-text">高斯公式</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
