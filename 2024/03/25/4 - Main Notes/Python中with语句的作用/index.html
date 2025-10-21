@@ -253,7 +253,7 @@ var _hmt = _hmt || [];
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Test_class</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;__init__&quot;</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__enter__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;__enter__&quot;</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;foo&quot;</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__exit__</span>(<span class="params">self, exc_type, exc_value, exc_trace</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;__exit__&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;type: &quot;</span>, exc_type)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;value: &quot;</span>, exc_value)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;trace: &quot;</span>, exc_trace)</span><br><span class="line"></span><br><span class="line"><span class="meta">    @staticmethod</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">do_something</span>():</span><br><span class="line">        <span class="number">1</span> / <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> Test_class() <span class="keyword">as</span> test_class:</span><br><span class="line">    <span class="built_in">print</span>(test_class)</span><br></pre></td></tr></table></figure>
 <p>运行结果如下：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images20240325215619.png" alt=""></p>
-<p>可以看到，在执行程序时，with语句先调用了其指向的Test_class函数（也是构造函数），然后进入了__enter__函数，将其返回值(“foo”)赋予test_class变量，最后在退出代码块时调用了__exit__函数。</p>
+<p>可以看到，在执行程序时，with语句先调用了其指向的Test<em>class函数（也是构造函数），然后进入了\</em>_enter__函数，将其返回值(“foo”)赋予test<em>class变量，最后在退出代码块时调用了\</em>_exit__函数。</p>
 <hr>
 <p>如果在执行with语句后的函数时就出现异常会发生什么？</p>
 <p>我们将程序进入位置的语句改成如下样式：</p>
@@ -261,7 +261,7 @@ var _hmt = _hmt || [];
 <p>运行结果如下：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images20240325221321.png" alt=""></p>
 <p>这个异常被抛出了。</p>
-<p>这说明，异常仅在发生在被with语句引出的代码块中时才会被__exit__函数捕获，而如果异常发生在调用with语句后的函数的执行过程中时则会被抛出，而这也能解释为什么在open函数尝试以只读模式打开不存在的文件时发生的异常被抛出。</p>
+<p>这说明，异常仅在发生在被with语句引出的代码块中时才会被<em>_exit\</em>_函数捕获，而如果异常发生在调用with语句后的函数的执行过程中时则会被抛出，而这也能解释为什么在open函数尝试以只读模式打开不存在的文件时发生的异常被抛出。</p>
 <hr>
 <p>当with语句后接的是一般表达式时也是这样：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> <span class="number">1</span> / <span class="number">0</span> <span class="keyword">as</span> test_class:</span><br><span class="line">    <span class="built_in">print</span>(test_class)</span><br></pre></td></tr></table></figure>
@@ -339,8 +339,8 @@ var _hmt = _hmt || [];
     </a>
   
   
-    <a href="/2024/03/24/4%20-%20Main%20Notes/Calculus%E7%AC%94%E8%AE%B0%E7%9B%AE%E5%BD%95/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Calculus笔记目录</div>
+    <a href="/2024/03/24/4%20-%20Main%20Notes/Crash%20Course%20Computer/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Crash Course Computer笔记</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -577,15 +577,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">小说</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">电影</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -621,6 +617,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">小说</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">哲学</a>
               </li>
              
@@ -630,10 +630,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">文学</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">深度学习</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -650,6 +646,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">民族学</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">深度学习</a>
               </li>
              
               <li class="article-tag-list-item">

@@ -223,7 +223,7 @@ var _hmt = _hmt || [];
   x = x(t)\qquad y = y(t)\qquad a\le t\le b
   \tag{2.1}\label{参数方程}</script><p>  所确定的平面曲线 $C$ ，它也可以用向量方程 $\mathbf r(t) = x(t)\mathbf i + y(t)\mathbf j$ 来表示。其中 $C$ 是一条平滑曲线，即 $\mathbf r’$ 连续且 $\mathbf r’(t)\ne\mathbf 0$ 。</p>
 </li>
-<li><p>将参数区间 $[a, b]$ 分成 $n$ 个等宽子区间 $[t_{i  - 1}, t_i]$ ，令 $x_i = x(t_i)$ 且 $y_i = y(t_i)$ ，则对应的点 $P_i(x_i, y_i)$ 将 $C$ 分割成 $n$ 个子弧段，分别长 $\Delta s_1, \Delta s_2, \dots, \Delta s_n$ 。在第 $i$ 个子弧段中取采样点 <script type="math/tex">P_i^*(x_i^*, y_i^*)</script> ，这个点对应 $[t_{i - 1}, t_i]$ 中的点 $t_i^*$ 。</p>
+<li><p>将参数区间 $[a, b]$ 分成 $n$ 个等宽子区间 $[t<em>{i  - 1}, t_i]$ ，令 $x_i = x(t_i)$ 且 $y_i = y(t_i)$ ，则对应的点 $P_i(x_i, y_i)$ 将 $C$ 分割成 $n$ 个子弧段，分别长 $\Delta s_1, \Delta s_2, \dots, \Delta s_n$ 。在第 $i$ 个子弧段中取采样点 <script type="math/tex">P_i^*(x_i^*, y_i^*)</script> ，这个点对应 $[t</em>{i - 1}, t_i]$ 中的点 $t_i^*$ 。</p>
 </li>
 <li><p>令 $f$ 为定义域包括曲线 $C$ 的二元函数，和</p>
 <script type="math/tex; mode=display">
@@ -301,7 +301,7 @@ var _hmt = _hmt || [];
   \tag{2.8}\label{质心}</script></li>
 </ul>
 <h4 id="对坐标的直线积分"><a href="#对坐标的直线积分" class="headerlink" title="对坐标的直线积分"></a>对坐标的直线积分</h4><ul>
-<li><p>将 $\Delta s_i$ 替换为 $\Delta x_i = x_i - x_{i - 1}$ 或 $\Delta y_i = y_i - y_{i - 1}$ ，则我们得到 $\boldsymbol f$ <strong>沿 $\boldsymbol C$ 对 $\boldsymbol x$ 和 $\boldsymbol y$ 的直线积分</strong>(<strong>line integrals of $\boldsymbol f$ along $\boldsymbol C$ with respect to $\boldsymbol x$ and $\boldsymbol y$ </strong>)：</p>
+<li><p>将 $\Delta s<em>i$ 替换为 $\Delta x_i = x_i - x</em>{i - 1}$ 或 $\Delta y<em>i = y_i - y</em>{i - 1}$ ，则我们得到 $\boldsymbol f$ <strong>沿 $\boldsymbol C$ 对 $\boldsymbol x$ 和 $\boldsymbol y$ 的直线积分</strong>(<strong>line integrals of $\boldsymbol f$ along $\boldsymbol C$ with respect to $\boldsymbol x$ and $\boldsymbol y$ </strong>)：</p>
 <script type="math/tex; mode=display">
   \int_Cf(x, y)dx = 
   \lim_{n\to\infty}
@@ -390,7 +390,7 @@ var _hmt = _hmt || [];
 </li>
 <li><p>设 $\mathbf F = P\mathbf i + Q\mathbf j + R\mathbf k$ 是在 $\mathbb R^3$ 中连续的力场，且通过移动粒子沿平滑的曲线 $C$ 做功。</p>
 <p>  <img src="https://cdn.jsdelivr.net/gh/MOSSJD/pictures/images202405181214127.png" alt=""></p>
-<p>  ​        如上图，通过将参变量区间 $[a, b]$ 分成等长的子区间，我们将 $C$ 分割成子弧段 $P_{i - 1}P_i$ ，每一个长 $\Delta s_i$ 。在第 $i$ 个子区间对应参变量值 <script type="math/tex">t_i^*</script> 选择采样点 <script type="math/tex">P_i^*(x_i^*, y_i^*, z_i^*)</script> 。若 $\Delta s_i$ 足够小，则粒子在从 $P_{i - 1}$ 到 $P_i$ 的运动过程可以用在 <script type="math/tex">P_i^*</script> 的单位切向量 <script type="math/tex">\mathbf T(t_i^*)</script> 的方向来近似。因此力 $\mathbf F$ 在将粒子由 $P_{i - 1}$ 推动到 $P_i$ 的过程中所做的功可以近似为</p>
+<p>  ​        如上图，通过将参变量区间 $[a, b]$ 分成等长的子区间，我们将 $C$ 分割成子弧段 $P<em>{i - 1}P_i$ ，每一个长 $\Delta s_i$ 。在第 $i$ 个子区间对应参变量值 <script type="math/tex">t_i^*</script> 选择采样点 <script type="math/tex">P_i^*(x_i^*, y_i^*, z_i^*)</script> 。若 $\Delta s_i$ 足够小，则粒子在从 $P</em>{i - 1}$ 到 $P<em>i$ 的运动过程可以用在 <script type="math/tex">P_i^*</script> 的单位切向量 <script type="math/tex">\mathbf T(t_i^*)</script> 的方向来近似。因此力 $\mathbf F$ 在将粒子由 $P</em>{i - 1}$ 推动到 $P_i$ 的过程中所做的功可以近似为</p>
 <script type="math/tex; mode=display">
   \mathbf F(x_i^*, y_i^*, z_i^*)\cdot
   [\Delta s_i\mathbf T(t_i^*)] = 
@@ -731,15 +731,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">小说</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">电影</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -775,6 +771,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">小说</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">哲学</a>
               </li>
              
@@ -784,10 +784,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">文学</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">深度学习</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -804,6 +800,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">民族学</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">深度学习</a>
               </li>
              
               <li class="article-tag-list-item">

@@ -240,7 +240,7 @@ R_{ij} = [x_{i - 1}, x_i]\times[y_{j - 1}, y_j] = \{(x, y)|x_{i - 1}\le x\le x_i
 </ul>
 </li>
 <li><p>通过采样来进行估计</p>
-<p>  在每一个 $R_{ij}$ 内采样点 <script type="math/tex">(x_{ij}^*, y_{ij}^*)</script> ，则我们可以用底为 <script type="math/tex">R_{ij}</script> ，高为 <script type="math/tex">f(x_{ij}^*, y_{ij}^*)</script> 的窄长方体来估计 $S$ 的一部分，其体积为</p>
+<p>  在每一个 $R<em>{ij}$ 内采样点 $$(x</em>{ij}^<em>, y_{ij}^</em>)<script type="math/tex">，则我们可以用底为</script>R<em>{ij}<script type="math/tex">，高为</script>f(x</em>{ij}^<em>, y_{ij}^</em>)$$ 的窄长方体来估计 $S$ 的一部分，其体积为</p>
 <script type="math/tex; mode=display">
   f(x_{ij}^*, y_{ij}^*)\Delta A</script><p>  重复这样的过程，我们可以得到对 $S$ 体积的一个估计：</p>
 <script type="math/tex; mode=display">
@@ -273,8 +273,8 @@ R_{ij} = [x_{i - 1}, x_i]\times[y_{j - 1}, y_j] = \{(x, y)|x_{i - 1}\le x\le x_i
 </li>
 </ul>
 <h4 id="二重积分的积分中值定理"><a href="#二重积分的积分中值定理" class="headerlink" title="二重积分的积分中值定理"></a>二重积分的积分中值定理</h4><script type="math/tex; mode=display">
-\iint\limits_Rf(x, y)dA\approx\sum_{i = 1}^m\sum_{j = 1}^nf(\bar{x}_i, \bar{y}_j)\Delta A</script><p>其中 $\bar{x}_i$ 和 $\bar{y}_j$ 分别是子区间 $[x_{i - 1}, x_i]$ 和 $[y_{j - 1}, y_j]$ 的中值。</p>
-<h4 id="Fubini定理"><a href="#Fubini定理" class="headerlink" title="Fubini定理"></a>Fubini定理</h4><p>当 $f$ 在矩形区间 $R = \{(x, y)|a\le x\le b, c\le y\le d\}$ 内连续时，</p>
+\iint\limits_Rf(x, y)dA\approx\sum_{i = 1}^m\sum_{j = 1}^nf(\bar{x}_i, \bar{y}_j)\Delta A</script><p>其中 $\bar{x}<em>i$ 和 $\bar{y}_j$ 分别是子区间 $[x</em>{i - 1}, x<em>i]$ 和 $[y</em>{j - 1}, y_j]$ 的中值。</p>
+<h4 id="Fubini定理"><a href="#Fubini定理" class="headerlink" title="Fubini定理"></a>Fubini定理</h4><p>当 $f$ 在矩形区间 $R = {(x, y)|a\le x\le b, c\le y\le d}$ 内连续时，</p>
 <script type="math/tex; mode=display">
 \iint\limits_Rf(x, y)dA = \int_a^b\int_c^df(x, y)dydx = \int_c^d\int_a^bf(x, y)dxdy</script><p>更广泛地，这个定理在 $f$ 只在区间 $R$ 的有限个点上不连续时也成立。</p>
 <h4 id="乘法定理"><a href="#乘法定理" class="headerlink" title="乘法定理"></a>乘法定理</h4><script type="math/tex; mode=display">
@@ -573,15 +573,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">小说</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">电影</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -617,6 +613,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">小说</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">哲学</a>
               </li>
              
@@ -626,10 +626,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">文学</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">深度学习</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -646,6 +642,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">民族学</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">深度学习</a>
               </li>
              
               <li class="article-tag-list-item">
